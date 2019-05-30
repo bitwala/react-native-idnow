@@ -35,6 +35,22 @@
   	```
 
 
+### Additional *required* steps:
+
+#### Android
+
+- Update `android/build.gradle`:
+  add `dirs "$rootDir/../node_modules/react-native-idnow/android/libs" to `allprojects.repositories.flatDir`
+
+- Update `android/app/src/AndroidManifest.xml`:
+  add `xmlns:tools="http://schemas.android.com/tools"` to the `manifest` tag
+  add `tools:replace="android:icon,android:theme,android:allowBackup"` to the `application` tag
+
+#### iOS
+
+- Nothing
+
+
 ## Usage
 ```javascript
 import RNIdnow from 'react-native-idnow';

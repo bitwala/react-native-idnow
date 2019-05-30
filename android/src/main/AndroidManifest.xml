@@ -1,6 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bitwala.idnow">
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.bitwala.idnow">
+  <uses-permission android:name="android.permission.READ_SMS"/>
 
 </manifest>
   
