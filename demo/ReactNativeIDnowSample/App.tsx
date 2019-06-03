@@ -26,16 +26,8 @@ export default class App extends Component<Props> {
               showVideoOverviewCheck: true,
               showErrorSuccessScreen: true,
               companyId: '',
-              transactionToken: 'TST-JZQEA',
+              transactionToken: 'TST-TWRVY',
               environment: 'TEST',
-              
-              // environment: 'CUSTOM', // if 'CUSTOM', apiHost, webHost and websocketHost must also be set
-              // apiHost: '',
-              // webHost: '',
-              // websocketHost: '',
-              // videoHost: '',
-              // stunHost: '',
-              // stunPort: '',
             });
           }}
         />
