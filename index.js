@@ -5,10 +5,10 @@ const { RNIdnow } = NativeModules;
 
 export const defaultOptions = {
   companyId: '',
-  showVideoOverviewCheck: false,
-  showErrorSuccessScreen: false,
+  showVideoOverviewCheck: true,
+  showErrorSuccessScreen: true,
   transactionToken: 'TST-XXXXX',
-  environment: 'LIVE',
+  // environment: 'LIVE', no need to force to use a specific env; Default is to determine this by the token used
   // apiHost: null,
   // webHost: null,
   // websocketHost: null,

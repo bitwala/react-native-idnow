@@ -27,23 +27,23 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
         return "RNIdnow";
     }
 
-    private IDnowSDK.Server getServer(String environment) {
-        final HashMap<String, IDnowSDK.Server> environmentServerMap = new HashMap();
+    // private IDnowSDK.Server getServer(String environment) {
+    //     final HashMap<String, IDnowSDK.Server> environmentServerMap = new HashMap();
 
-        environmentServerMap.put("DEV", IDnowSDK.Server.DEV);
-        environmentServerMap.put("DEV2", IDnowSDK.Server.DEV2);
-        environmentServerMap.put("TEST", IDnowSDK.Server.TEST);
-        environmentServerMap.put("TEST1", IDnowSDK.Server.TEST1);
-        environmentServerMap.put("TEST2", IDnowSDK.Server.TEST2);
-        environmentServerMap.put("TEST3", IDnowSDK.Server.TEST3);
-        environmentServerMap.put("LIVE", IDnowSDK.Server.LIVE);
-        environmentServerMap.put("CUSTOM", IDnowSDK.Server.CUSTOM);
-        environmentServerMap.put("INT", IDnowSDK.Server.INT);
-        environmentServerMap.put("DV3", IDnowSDK.Server.DV3);
-        environmentServerMap.put("DV4", IDnowSDK.Server.DV4);
+    //     environmentServerMap.put("DEV", IDnowSDK.Server.DEV);
+    //     environmentServerMap.put("DEV2", IDnowSDK.Server.DEV2);
+    //     environmentServerMap.put("TEST", IDnowSDK.Server.TEST);
+    //     environmentServerMap.put("TEST1", IDnowSDK.Server.TEST1);
+    //     environmentServerMap.put("TEST2", IDnowSDK.Server.TEST2);
+    //     environmentServerMap.put("TEST3", IDnowSDK.Server.TEST3);
+    //     environmentServerMap.put("LIVE", IDnowSDK.Server.LIVE);
+    //     environmentServerMap.put("CUSTOM", IDnowSDK.Server.CUSTOM);
+    //     environmentServerMap.put("INT", IDnowSDK.Server.INT);
+    //     environmentServerMap.put("DV3", IDnowSDK.Server.DV3);
+    //     environmentServerMap.put("DV4", IDnowSDK.Server.DV4);
 
-        return environmentServerMap.get(environment);
-    }
+    //     return environmentServerMap.get(environment);
+    // }
 
     @ReactMethod
     public void startVideoIdent(final ReadableMap options, final Promise promise) {
@@ -56,9 +56,10 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
 
             String environment = options.getString("environment");
 
-            IDnowSDK.setEnvironment(this.getServer(environment)); // default is "LIVE"
+            // IDnowSDK.setEnvironment(this.getServer(environment)); // no need to force to use a specific env; Default is to determine this by the token used
 
             if (environment.equals("CUSTOM")) {
+                IDnowSDK.setEnvironment(IDnowSDK.Server.CUSTOM);
                 IDnowSDK.setApiHost(options.getString("apiHost"), reactContext); // require if env is "CUSTOM"
                 IDnowSDK.setWebHost(options.getString("webHost"), reactContext); // require if env is "CUSTOM"
                 IDnowSDK.setWebsocketHost(options.getString("websocketHost"), reactContext); // require if env is "CUSTOM"
