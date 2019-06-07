@@ -1,0 +1,5 @@
+platform :ios, '9.0'
+
+target 'ReactNativeIDnowSample' do
+  pod 'IDnowSDK', '3.18.0'
+end

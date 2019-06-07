@@ -12,10 +12,11 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, NativeModules } from 'react-native';
 import IDnow from 'react-native-idnow';
 
-
 interface Props {}
 export default class App extends Component<Props> {
   render() {
+    const _NativeModules = NativeModules;
+    debugger;
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>react-native-idnow demo</Text>
