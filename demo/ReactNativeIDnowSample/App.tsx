@@ -17,9 +17,7 @@ export default class App extends Component<Props> {
   render() {
     const options = {
       showVideoOverviewCheck: true,
-      showErrorSuccessScreen: true,
-      companyId: '',
-      transactionToken: 'TST-UTUQZ',
+      transactionToken: 'TST-WEMDD',
       environment: 'TEST',
     };
     return (
@@ -31,14 +29,9 @@ export default class App extends Component<Props> {
             try {
               const resp = await IDnowManager.startVideoIdent(options);
               console.warn('resp', resp);
-              Alert.alert(JSON.stringify(resp));
             } catch (e) {
-              Alert.alert(JSON.stringify(e));
               console.warn('e', e);
             }
-            setTimeout(() => {
-              IDnowManager.hide()
-            }, 5000);
           }}
         />
       </View>

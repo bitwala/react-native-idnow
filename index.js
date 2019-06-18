@@ -78,9 +78,6 @@ const IDnowManager = {
       });
     });
   },
-  hide() {
-    return IDnowViewManager.hide();
-  },
 };
 
 export { IDnowManager };
