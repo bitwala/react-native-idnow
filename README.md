@@ -47,6 +47,8 @@
   add `xmlns:tools="http://schemas.android.com/tools"` to the `manifest` tag
   add `tools:replace="android:icon,android:theme,android:allowBackup"` to the `application` tag
 
+- (not required) To change colors, update `colors.xml` (see `/demo/ReactNativeIDnowSample/android/app/src/main/res/values/colors.xml`)
+
 #### iOS
 
 - Add following to Info.plist:
