@@ -7,17 +7,18 @@
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-idnow`
+`$ react-native link react-native-idnow --platforms="android"`
 
 ### Manual installation
 
 
 #### iOS
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
+- See "Additional *required* steps"
+<!-- 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-idnow` and add `RNIdnow.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNIdnow.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+4. Run your project (`Cmd+R`) -->
 
 #### Android
 
@@ -48,7 +49,15 @@
 
 #### iOS
 
-- Nothing
+- Add following to Info.plist:
+```
+	<key>NSCameraUsageDescription</key>
+	<string>Need camera access for video streaming and identification</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Need microphone access for video identification</string>
+```
+
+- Add `RNIdnow.h` and `RNIdnow.m` files to the ios project(see demo app) 
 
 
 ## Usage

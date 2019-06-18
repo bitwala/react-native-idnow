@@ -23,6 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		7884EFF122B8D401002FA1B1 /* RNIdnow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7884EFF022B8D401002FA1B1 /* RNIdnow.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B56F09C65815062675213097 /* libPods-ReactNativeIDnowSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5C5F1AC752D1EEFC78EC2D /* libPods-ReactNativeIDnowSample.a */; };
@@ -332,6 +333,8 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		66E4C30B0AEECF441ABC75AC /* Pods-ReactNativeIDnowSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample/Pods-ReactNativeIDnowSample.debug.xcconfig"; sourceTree = "<group>"; };
 		68DBDBB09D554626892D6360 /* libRNIdnow.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNIdnow.a; sourceTree = "<group>"; };
+		7884EFEF22B8D3EB002FA1B1 /* RNIdnow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNIdnow.h; sourceTree = "<group>"; };
+		7884EFF022B8D401002FA1B1 /* RNIdnow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNIdnow.m; sourceTree = "<group>"; wrapsLines = 0; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
@@ -463,6 +466,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				7884EFEF22B8D3EB002FA1B1 /* RNIdnow.h */,
+				7884EFF022B8D401002FA1B1 /* RNIdnow.m */,
 			);
 			name = ReactNativeIDnowSample;
 			sourceTree = "<group>";
@@ -1155,6 +1160,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				7884EFF122B8D401002FA1B1 /* RNIdnow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
