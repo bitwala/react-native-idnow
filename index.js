@@ -1,7 +1,10 @@
 
-import { NativeModules, processColor } from 'react-native';
+import { NativeModules, processColor, Platform } from 'react-native';
 
-const { IDnowViewManager } = NativeModules;
+const RNIdnow = Platform.select({
+  ios: NativeModules.IDnowViewManager,
+  android: NativeModules.RNIdNow,
+});
 
 export const defaultOptions = {
   companyId: '',
@@ -68,7 +71,7 @@ const prepareOptions = (options) => {
 const IDnowManager = { 
   startVideoIdent(options) {
     return new Promise((resolve, reject) => {
-      IDnowViewManager.startVideoIdent(prepareOptions(options), (...args) => {
+      RNIdnow.startVideoIdent(prepareOptions(options), (...args) => {
         const err = args[0];
         const resp = args[1];
         if (resp && resp.success) {
