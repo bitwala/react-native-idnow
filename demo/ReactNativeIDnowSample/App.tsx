@@ -17,7 +17,7 @@ export default class App extends Component<Props> {
   render() {
     const options = {
       showVideoOverviewCheck: true,
-      transactionToken: 'TST-WEMDD',
+      transactionToken: 'TST-PTSSG',
       environment: 'TEST',
     };
     return (
@@ -28,9 +28,9 @@ export default class App extends Component<Props> {
           onPress={async () => {
             try {
               const resp = await IDnowManager.startVideoIdent(options);
-              console.warn('resp', resp);
+              console.warn('==== resp', resp);
             } catch (e) {
-              console.warn('e', e);
+              console.warn('==== e', e);
             }
           }}
         />

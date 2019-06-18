@@ -1,10 +1,4 @@
-
 import { NativeModules, processColor, Platform } from 'react-native';
-
-const RNIdnow = Platform.select({
-  ios: NativeModules.IDnowViewManager,
-  android: NativeModules.RNIdnow,
-});
 
 export const defaultOptions = {
   companyId: '',
@@ -70,16 +64,20 @@ const prepareOptions = (options) => {
 
 const IDnowManager = { 
   startVideoIdent(options) {
-    return new Promise((resolve, reject) => {
-      RNIdnow.startVideoIdent(prepareOptions(options), (...args) => {
-        const err = args[0];
-        const resp = args[1];
-        if (resp && resp.success) {
-          return resolve(resp);
-        } 
-        return reject(err && err.message || 'Internal error');
+    if (Platform.OS === 'ios') {
+      return new Promise((resolve, reject) => {
+        NativeModules.IDnowViewManager.startVideoIdent(prepareOptions(options), (...args) => {
+          const err = args[0];
+          const resp = args[1];
+          if (resp && resp.success) {
+            return resolve(resp);
+          } 
+          return reject(err && err.message || 'Internal error');
+        });
       });
-    });
+    } else if (Platform.OS === 'android') {
+      return NativeModules.RNIdnow.startVideoIdent(prepareOptions(options));
+    }
   },
 };
 

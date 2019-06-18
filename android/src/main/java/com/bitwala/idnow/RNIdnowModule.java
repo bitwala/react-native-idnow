@@ -2,23 +2,54 @@
 package com.bitwala.idnow;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.widget.Toast;
 
+import com.facebook.react.bridge.ActivityEventListener;
+import com.facebook.react.bridge.BaseActivityEventListener;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableMap;
 
-import java.util.HashMap;
+//import java.util.HashMap;
 
 import de.idnow.sdk.IDnowSDK;
 
 public class RNIdnowModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
+    private Promise idnowPromise;
+
+    private final ActivityEventListener idnowActivityEventListener = new BaseActivityEventListener() {
+        @Override
+        public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent intent) {
+            Toast.makeText(getCurrentActivity(),"requestCode: " + requestCode + ", resultCode: " + resultCode, Toast.LENGTH_LONG).show();
+
+            switch (resultCode) {
+
+                case IDnowSDK.RESULT_CODE_SUCCESS:
+                    idnowPromise.resolve(true);
+                    break;
+
+                case IDnowSDK.RESULT_CODE_CANCEL:
+                    idnowPromise.reject("CANCELLED", "Identification canceled");
+                    break;
+
+                case IDnowSDK.RESULT_CODE_FAILED:
+                    idnowPromise.reject("FAILED", "Identification failed");
+                    break;
+
+                default:
+                    idnowPromise.reject("INTERNAL_ERROR", "Internal error: " + resultCode);
+            }
+        }
+    };
 
     public RNIdnowModule(ReactApplicationContext reactContext) {
         super(reactContext);
+        reactContext.addActivityEventListener(idnowActivityEventListener);
         this.reactContext = reactContext;
     }
 
@@ -48,6 +79,7 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void startVideoIdent(final ReadableMap options, final Promise promise) {
         Activity currentActivity = getCurrentActivity();
+        idnowPromise = promise;
 
         try {
             IDnowSDK.getInstance().initialize(currentActivity, options.getString("companyId"));
@@ -78,8 +110,6 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
             IDnowSDK.setTransactionToken(options.getString("transactionToken"), reactContext);
 
             IDnowSDK.getInstance().start(IDnowSDK.getTransactionToken(reactContext));
-
-            promise.resolve(true);
         } catch (Exception e) {
             promise.reject("ERR_UNEXPECTED_EXCEPTION", e);
         }
