@@ -3,7 +3,7 @@ import { NativeModules, processColor, Platform } from 'react-native';
 
 const RNIdnow = Platform.select({
   ios: NativeModules.IDnowViewManager,
-  android: NativeModules.RNIdNow,
+  android: NativeModules.RNIdnow,
 });
 
 export const defaultOptions = {
