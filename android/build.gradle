@@ -40,7 +40,7 @@ repositories {
 dependencies {
     implementation 'com.facebook.react:react-native:+'
 
-    implementation 'de.idnow.sdk:idnow-android-3.18.0@aar'
+    implementation 'de.idnow.sdk:idnow-android-3.20.0@aar'
     // transitive dependencies of the idnow SDK
     implementation 'org.slf4j:slf4j-android:1.7.12'
     implementation 'com.squareup.retrofit:retrofit:1.9.0'

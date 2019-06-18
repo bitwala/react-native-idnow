@@ -49,6 +49,8 @@
 
 - (not required) To change colors, update `colors.xml` (see `/demo/ReactNativeIDnowSample/android/app/src/main/res/values/colors.xml`)
 
+- install and link `react-native-sentry`
+
 #### iOS
 
 - Add following to Info.plist:

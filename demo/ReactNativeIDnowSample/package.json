@@ -9,7 +9,8 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.4",
-    "react-native-idnow": "file:../../"
+    "react-native-idnow": "file:../../",
+    "react-native-sentry": "0.43.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
