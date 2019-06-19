@@ -53,6 +53,16 @@
 
 #### iOS
 
+- Add the following pod dependencies to your podfile:
+```
+pod 'IDnowSDK'
+```
+
+- Then, run the following command:
+```
+pod install
+```
+
 - Add following to Info.plist:
 ```
 	<key>NSCameraUsageDescription</key>
