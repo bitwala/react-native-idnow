@@ -18,15 +18,15 @@ export const defaultOptions = {
 
   appearance: {
     // Adjust colors
-    defaultTextColor: '#000',
-    primaryBrandColor: 'blue',
-    proceedButtonBackgroundColor: 'orange',
-    proceedButtonTextColor: 'rgba(255, 255, 255, 1)',
-    photoIdentRetakeButtonBackgroundColor: 'orange',
-    photoIdentRetakeButtonTextColor: 'white',
-    textFieldColor: 'grey',
-    failureColor: 'red',
-    successColor: 'cyan',
+    primaryBrandColor: '#1D4477', // primaryBlue
+    successColor: '#1ABC9C', // successGreen
+    failureColor: '#EE4555', // warningRed
+    proceedButtonBackgroundColor: '#1D4477', // primaryBlue
+    proceedButtonTextColor: '#1D4477', // primaryBlue
+    photoIdentRetakeButtonBackgroundColor: '#1D4477', // primaryBlue
+    photoIdentRetakeButtonTextColor: '#FFFFFF', // whitestWhite
+    // defaultTextColor: '#000',
+    // textFieldColor: 'grey',
     
     // Adjust statusbar
     enableStatusBarStyleLightContent: false,
