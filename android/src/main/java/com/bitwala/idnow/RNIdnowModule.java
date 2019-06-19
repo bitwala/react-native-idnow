@@ -25,8 +25,6 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
     private final ActivityEventListener idnowActivityEventListener = new BaseActivityEventListener() {
         @Override
         public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent intent) {
-            Toast.makeText(getCurrentActivity(),"requestCode: " + requestCode + ", resultCode: " + resultCode, Toast.LENGTH_LONG).show();
-
             switch (resultCode) {
 
                 case IDnowSDK.RESULT_CODE_SUCCESS:
