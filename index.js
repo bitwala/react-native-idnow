@@ -22,7 +22,7 @@ export const defaultOptions = {
     successColor: '#1ABC9C', // successGreen
     failureColor: '#EE4555', // warningRed
     proceedButtonBackgroundColor: '#1D4477', // primaryBlue
-    proceedButtonTextColor: '#1D4477', // primaryBlue
+    proceedButtonTextColor: '#FFFFFF', // whitestWhite
     photoIdentRetakeButtonBackgroundColor: '#1D4477', // primaryBlue
     photoIdentRetakeButtonTextColor: '#FFFFFF', // whitestWhite
     // defaultTextColor: '#000',
