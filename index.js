@@ -72,7 +72,7 @@ const IDnowManager = {
           if (resp && resp.success) {
             return resolve(resp);
           } 
-          return reject(err && err.message || 'Internal error');
+          return reject(err || new Error('Internal error'));
         });
       });
     } else if (Platform.OS === 'android') {
