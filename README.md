@@ -47,6 +47,8 @@
   add `xmlns:tools="http://schemas.android.com/tools"` to the `manifest` tag
   add `tools:replace="android:icon,android:theme,android:allowBackup"` to the `application` tag
 
+- See https://github.com/idnow/de.idnow.android AndroidManifest section
+
 - (not required) To change colors, update `colors.xml` (see `/demo/ReactNativeIDnowSample/android/app/src/main/res/values/colors.xml`)
 
 - install and link `react-native-sentry`
