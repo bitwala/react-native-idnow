@@ -1,8 +1,7 @@
-
 {
   "name": "react-native-idnow",
   "version": "0.0.3",
-  "description": "",
+  "description": "React Native IDnow binding for iOS/Android platforms.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +9,12 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
+  "repository": "git+https://github.com/bitwala/react-native-idnow.git",
+  "homepage": "https://github.com/bitwala/react-native-idnow#readme",
+  "author": "Bitwala",
+  "bugs": {
+    "url": "https://github.com/bitwala/react-native-idnow/issues"
+  },
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
