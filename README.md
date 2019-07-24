@@ -78,9 +78,14 @@ pod install
 
 ## Usage
 ```javascript
-import RNIdnow from 'react-native-idnow';
+import { IDnowManager } from 'react-native-idnow';
 
-// TODO: What to do with the module?
-RNIdnow;
+try {
+	await IDnowManager.startVideoIdent({
+		transactionToken: 'TST-XXXXX',
+	});
+} catch (e) {
+	...
+}
 ```
   
