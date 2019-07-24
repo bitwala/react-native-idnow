@@ -7,9 +7,7 @@
 
 const blacklist = require('metro-config/src/defaults/blacklist');
 
-const blacklistRE = blacklist([
-  /node_modules\/react-native-idnow\/demo\/.*/,
-]);
+const blacklistRE = blacklist([/node_modules\/react-native-idnow\/demo\/.*/]);
 
 module.exports = {
   resolver: {

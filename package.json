@@ -4,10 +4,12 @@
   "description": "React Native IDnow binding for iOS/Android platforms.",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,md,graphql}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "IDnow"
   ],
   "repository": "git+https://github.com/bitwala/react-native-idnow.git",
   "homepage": "https://github.com/bitwala/react-native-idnow#readme",
@@ -15,8 +17,28 @@
   "bugs": {
     "url": "https://github.com/bitwala/react-native-idnow/issues"
   },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,graphql}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
+  },
+  "devDependencies": {
+    "husky": "3.0.1",
+    "lint-staged": "9.2.0",
+    "prettier": "1.18.2"
   }
 }

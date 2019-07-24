@@ -27,18 +27,18 @@ export const defaultOptions = {
     photoIdentRetakeButtonTextColor: '#FFFFFF', // whitestWhite
     // defaultTextColor: '#000',
     // textFieldColor: 'grey',
-    
+
     // Adjust statusbar
     enableStatusBarStyleLightContent: false,
-    
+
     // Adjust fonts
     fontNameRegular: 'HelveticaNeue',
     fontNameLight: 'HelveticaNeue-Ligth',
     fontNameMedium: 'HelveticaNeue-Bold',
-  }
-}
+  },
+};
 
-const prepareOptions = (options) => {
+const prepareOptions = options => {
   // TODO refactor
   const appearanceOptions = {
     ...defaultOptions.appearance,
@@ -51,29 +51,40 @@ const prepareOptions = (options) => {
       ...appearanceOptions,
       defaultTextColor: processColor(appearanceOptions.defaultTextColor),
       primaryBrandColor: processColor(appearanceOptions.primaryBrandColor),
-      proceedButtonBackgroundColor: processColor(appearanceOptions.proceedButtonBackgroundColor),
-      proceedButtonTextColor: processColor(appearanceOptions.proceedButtonTextColor),
-      photoIdentRetakeButtonBackgroundColor: processColor(appearanceOptions.photoIdentRetakeButtonBackgroundColor),
-      photoIdentRetakeButtonTextColor: processColor(appearanceOptions.photoIdentRetakeButtonTextColor),
+      proceedButtonBackgroundColor: processColor(
+        appearanceOptions.proceedButtonBackgroundColor
+      ),
+      proceedButtonTextColor: processColor(
+        appearanceOptions.proceedButtonTextColor
+      ),
+      photoIdentRetakeButtonBackgroundColor: processColor(
+        appearanceOptions.photoIdentRetakeButtonBackgroundColor
+      ),
+      photoIdentRetakeButtonTextColor: processColor(
+        appearanceOptions.photoIdentRetakeButtonTextColor
+      ),
       textFieldColor: processColor(appearanceOptions.textFieldColor),
       failureColor: processColor(appearanceOptions.failureColor),
       successColor: processColor(appearanceOptions.successColor),
-    }
+    },
   };
-}
+};
 
-const IDnowManager = { 
+const IDnowManager = {
   startVideoIdent(options) {
     if (Platform.OS === 'ios') {
       return new Promise((resolve, reject) => {
-        NativeModules.IDnowViewManager.startVideoIdent(prepareOptions(options), (...args) => {
-          const err = args[0];
-          const resp = args[1];
-          if (resp && resp.success) {
-            return resolve(resp);
-          } 
-          return reject(err || new Error('Internal error'));
-        });
+        NativeModules.IDnowViewManager.startVideoIdent(
+          prepareOptions(options),
+          (...args) => {
+            const err = args[0];
+            const resp = args[1];
+            if (resp && resp.success) {
+              return resolve(resp);
+            }
+            return reject(err || new Error('Internal error'));
+          }
+        );
       });
     } else if (Platform.OS === 'android') {
       return NativeModules.RNIdnow.startVideoIdent(prepareOptions(options));
