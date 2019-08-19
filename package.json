@@ -4,8 +4,7 @@
   "description": "React Native IDnow binding for iOS/Android platforms.",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,md,graphql}'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,md,graphql}'"
   },
   "keywords": [
     "react-native",
