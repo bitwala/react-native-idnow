@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = package['license']
 
   s.authors      = package['author']
-  s.homepage     = package['repository']['url']
+  s.homepage     = package['homepage']
   s.platform     = :ios, "9.0"
   s.ios.deployment_target = '9.0'
   s.source       = { :git => "https://github.com/bitwala/react-native-idnow.git", :tag => "master" }
