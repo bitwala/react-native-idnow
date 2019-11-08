@@ -3,27 +3,29 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "react": "16.8.3",
-    "react-native": "0.59.4",
-    "react-native-idnow": "file:../../",
-    "react-native-sentry": "0.43.2"
+    "react": "16.9.0",
+    "react-native": "0.61.4",
+    "react-native-idnow": "file:../../"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/runtime": "^7.4.3",
-    "@types/jest": "^24.0.11",
-    "@types/react": "^16.8.13",
-    "@types/react-native": "^0.57.43",
-    "@types/react-test-renderer": "^16.8.1",
-    "babel-jest": "^24.7.1",
-    "jest": "^24.7.1",
-    "metro-react-native-babel-preset": "^0.53.1",
-    "react-test-renderer": "16.8.3",
-    "typescript": "^3.4.3"
+    "@types/jest": "24.0.22",
+    "@types/react": "16.9.11",
+    "@types/react-native": "0.60.22",
+    "@types/react-test-renderer": "16.9.1",
+    "@babel/core": "^7.7.2",
+    "@babel/runtime": "^7.7.2",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.57.0",
+    "react-test-renderer": "16.9.0",
+    "typescript": "3.7.2"
   },
   "jest": {
     "preset": "react-native"
