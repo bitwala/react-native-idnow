@@ -60,7 +60,7 @@ React Native IDnow binding for iOS/Android platforms.
 - Add the following pod dependencies to your podfile:
 
 ```
-pod 'IDnowSDK'
+pod 'IDnowSDK', '3.22.0'
 ```
 
 - Then, run the following command:
