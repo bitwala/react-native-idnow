@@ -37,6 +37,12 @@ React Native IDnow binding for iOS/Android platforms.
    ```
      compile project(':react-native-idnow')
    ```
+4. Add the following to `repositories` in `android/build.gradle`:
+   ```
+    maven {
+      url "https://raw.githubusercontent.com/idnow/de.idnow.android/master"
+    }
+   ```
 
 ### Additional _required_ steps:
 
@@ -60,7 +66,7 @@ React Native IDnow binding for iOS/Android platforms.
 - Add the following pod dependencies to your podfile:
 
 ```
-pod 'IDnowSDK', '3.22.0'
+pod 'IDnowSDK', '4.1.1'
 ```
 
 - Then, run the following command:
