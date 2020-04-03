@@ -24,7 +24,6 @@ PODS:
     - FLAnimatedImage (~> 1.0)
     - libPhoneNumber-iOS (~> 0.9)
     - Masonry (~> 1.1.0)
-    - Sentry (~> 4.3.4)
     - SocketRocket (~> 0.5.1)
   - libPhoneNumber-iOS (0.9.15)
   - Masonry (1.1.0)
@@ -226,7 +225,7 @@ PODS:
     - React-cxxreact (= 0.61.4)
     - React-jsi (= 0.61.4)
     - ReactCommon/jscallinvoker (= 0.61.4)
-  - RNIdnow (0.0.8):
+  - RNIdnow (0.1.0):
     - React
   - SocketRocket (0.5.1)
   - Yoga (1.14.0)
@@ -270,7 +269,6 @@ SPEC REPOS:
     - IDnowSDK
     - libPhoneNumber-iOS
     - Masonry
-    - Sentry
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -357,10 +355,10 @@ SPEC CHECKSUMS:
   React-RCTText: 21934e0a51d522abcd0a275407e80af45d6fd9ec
   React-RCTVibration: 0f76400ee3cec6edb9c125da49fed279340d145a
   ReactCommon: a6a294e7028ed67b926d29551aa9394fd989c24c
-  RNIdnow: 0b39cbd8af2b8096b55409aaa4024df3259977d1
+  RNIdnow: ebf0331929fea4ab9f2281cc06d58425310c85f1
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
 PODFILE CHECKSUM: a142874d7e258977c111340073a6b9cb0073ab16
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
