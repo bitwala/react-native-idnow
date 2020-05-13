@@ -34,7 +34,7 @@ target 'ReactNativeIDnowSample' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'IDnowSDK', '4.1.1'
+  pod 'IDnowSDK', '4.1.6'
 
   target 'ReactNativeIDnowSampleTests' do
     inherit! :search_paths
