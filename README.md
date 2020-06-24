@@ -40,7 +40,7 @@ React Native IDnow binding for iOS/Android platforms.
 4. Add the following to `repositories` in `android/build.gradle`:
    ```
     maven {
-      url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-4.1.4"
+      url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-4.1.6"
     }
    ```
 
