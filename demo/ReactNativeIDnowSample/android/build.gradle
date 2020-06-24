@@ -35,7 +35,7 @@ allprojects {
         jcenter()
         maven { url 'https://jitpack.io' }
         maven {
-            url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-4.1.4"
+            url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-4.1.6"
         }
     }
 }
