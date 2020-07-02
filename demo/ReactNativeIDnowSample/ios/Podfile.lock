@@ -35,12 +35,11 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - IDnowSDK (4.1.6):
+  - IDnowSDK (4.1.7):
     - AFNetworking (~> 4.0)
     - FLAnimatedImage (~> 1.0)
     - libPhoneNumber-iOS (~> 0.9)
     - Masonry (~> 1.1.0)
-    - Sentry (~> 4.3.4)
     - SocketRocket (~> 0.5.1)
   - libPhoneNumber-iOS (0.9.15)
   - Masonry (1.1.0)
@@ -253,7 +252,7 @@ DEPENDENCIES:
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - IDnowSDK (= 4.1.6)
+  - IDnowSDK (= 4.1.7)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -287,7 +286,6 @@ SPEC REPOS:
     - IDnowSDK
     - libPhoneNumber-iOS
     - Masonry
-    - Sentry
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -353,7 +351,7 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  IDnowSDK: 0e4f43d53ed1eab9f91da6381b896b1f64824883
+  IDnowSDK: da5f008301381bba80c60a1fd67821244bfda464
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RCTRequired: f3b3fb6f4723e8e52facb229d0c75fdc76773849
@@ -379,6 +377,6 @@ SPEC CHECKSUMS:
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
-PODFILE CHECKSUM: 7bb7a6ee778db5cffd5f9aa1a4531c4cac695fa3
+PODFILE CHECKSUM: f1dee59541d06a46befc12db12f92ac6687f76b0
 
 COCOAPODS: 1.9.1
