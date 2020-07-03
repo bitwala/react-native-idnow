@@ -34,6 +34,7 @@ react-native link react-native-idnow
 
 <details>
     <summary>iOS</summary>
+
 - See "Additional _required_ steps"
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
@@ -44,6 +45,7 @@ react-native link react-native-idnow
 
 <details>
     <summary>Android</summary>
+
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
 
 - Add `import com.bitwala.idnow.RNIdnowPackage;` to the imports at the top of the file
