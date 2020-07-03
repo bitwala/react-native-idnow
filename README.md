@@ -80,8 +80,6 @@ react-native link react-native-idnow
 
 - (not required) To change colors, update `colors.xml` (see `/demo/ReactNativeIDnowSample/android/app/src/main/res/values/colors.xml`)
 
-- install and link `react-native-sentry`
-
 ### iOS
 
 - Add the following pod dependencies to your podfile:
