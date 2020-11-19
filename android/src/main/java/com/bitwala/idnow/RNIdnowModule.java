@@ -25,22 +25,24 @@ public class RNIdnowModule extends ReactContextBaseJavaModule {
     private final ActivityEventListener idnowActivityEventListener = new BaseActivityEventListener() {
         @Override
         public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent intent) {
-            switch (resultCode) {
+            if (requestCode == IDnowSDK.REQUEST_ID_NOW_SDK) {
+                switch (resultCode) {
 
-                case IDnowSDK.RESULT_CODE_SUCCESS:
-                    idnowPromise.resolve(true);
-                    break;
+                    case IDnowSDK.RESULT_CODE_SUCCESS:
+                        idnowPromise.resolve(true);
+                        break;
 
-                case IDnowSDK.RESULT_CODE_CANCEL:
-                    idnowPromise.reject("CANCELLED", "Identification canceled");
-                    break;
+                    case IDnowSDK.RESULT_CODE_CANCEL:
+                        idnowPromise.reject("CANCELLED", "Identification canceled");
+                        break;
 
-                case IDnowSDK.RESULT_CODE_FAILED:
-                    idnowPromise.reject("FAILED", "Identification failed");
-                    break;
+                    case IDnowSDK.RESULT_CODE_FAILED:
+                        idnowPromise.reject("FAILED", "Identification failed");
+                        break;
 
-                default:
-                    idnowPromise.reject("INTERNAL_ERROR", "Internal error: " + resultCode);
+                    default:
+                        idnowPromise.reject("INTERNAL_ERROR", "Internal error: " + resultCode);
+                }
             }
         }
     };
