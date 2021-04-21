@@ -1,4 +1,18 @@
-# react-native-idnow
+# MoonfareApp.
+
+React Native Bridge wrapper around IDNow Android and IOS SDK. A fork of react-native-idnow (Thank You for reducing our work).
+
+Demo App inside the Demo folder.
+
+# To Run
+
+- Android : Install Android SDK and studio (setup emulator for Test) - https://developer.android.com/studio/
+
+yarn run android
+
+- IOS : Install Xcode and CocoaPod - https://cocoapods.org/, https://developer.apple.com/xcode/
+
+yarn run ios
 
 [![npm version](https://badge.fury.io/js/react-native-idnow.svg)](http://badge.fury.io/js/react-native-idnow)
 [![npm total downloads](https://img.shields.io/npm/dt/react-native-idnow.svg)](https://img.shields.io/npm/dt/react-native-idnow.svg)
