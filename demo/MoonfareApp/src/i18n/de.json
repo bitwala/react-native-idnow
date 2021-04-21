@@ -1,0 +1,35 @@
+{
+  "WELCOME": "Welcome",
+  "LOGIN": {
+    "TITLE": "Login to your account",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "EMAIL_ERROR": "Enter a valid email",
+    "PASSWORD_ERROR": "Enter a valid password",
+    "LOGIN": "Sign In",
+    "FORGOT_PASSWORD": "Forgot your password?",
+    "RESET_HERE": "Reset here",
+    "NO_ACCOUNT": "Don't have an account?",
+    "CREATE_ACCOUNT": "Create new account",
+    "SETTINGS": "Settings",
+    "CHANGE_LANGUAGE": "Change language",
+    "TERMS": "Terms & Conditions",
+    "CHANGE_URL": "Change URL"
+  },
+  "ERRORS": {
+    "COMMON_ERROR": "Impossible de se connecter au serveur Woot, veuillez réessayer ultérieurement",
+    "OfFLINE": "Vous devez vous connecter au Wi-Fi ou à un réseau cellulaire pour vous reconnecter",
+    "CANNOT_FETCH": "Une erreur s'est produite lors de la récupération des informations, veuillez réessayer",
+    "AUTH": "Nom d'utilisateur / mot de passe incorrect. Veuillez réessayer",
+    "NO_ACCOUNTS_MESSAGE": "Vous n'avez accès a aucun compte chatwoot"
+  },
+  "SUCCESS": {
+    "AUTH": "Connexion réussie"
+  },
+  "EXIT": {
+    "TITLE": "Quitter",
+    "SUBTITLE": "Voulez-vous vraiment quitter ?",
+    "CANCEL": "Annuler",
+    "OK": "OK"
+  }
+}

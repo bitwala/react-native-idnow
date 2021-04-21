@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'ReactNativeIDnowSample' do
-  # Pods for ReactNativeIDnowSample
+target 'MoonfareApp' do
+  # Pods for MoonfareApp
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -36,7 +36,7 @@ target 'ReactNativeIDnowSample' do
 
   pod 'IDnowSDK', '4.1.7'
 
-  target 'ReactNativeIDnowSampleTests' do
+  target 'MoonfareAppTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -44,10 +44,8 @@ target 'ReactNativeIDnowSample' do
   use_native_modules!
 end
 
-target 'ReactNativeIDnowSample-tvOS' do
-  # Pods for ReactNativeIDnowSample-tvOS
-
-  target 'ReactNativeIDnowSample-tvOSTests' do
+target 'MoonfareApp-tvOS' do
+  target 'MoonfareApp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

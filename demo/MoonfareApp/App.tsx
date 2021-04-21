@@ -1,13 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/emin93/react-native-template-typescript
- *
- * @format
- */
-
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Button, Alert} from 'react-native';
 import {IDnowManager} from 'react-native-idnow';
