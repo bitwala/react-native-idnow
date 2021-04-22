@@ -41,5 +41,11 @@
     "TRY_AGAIN": "Try again",
     "FAILED": "Identification Failed",
     "ERROR_MESSAGE": "There are various reasons for which an ID verification can go wrong - here are some tips that might help next time:\n• fast internet connection\n• well-lit room\n• ID/passport in good condition.\n\nThere is a 20% higher chance of successfully verifying your ID on the second attempt if there are no document-related issues."
+  },
+  "GOTO_APP": {
+    "START": "You are now ready to start investing",
+    "APP": "Go To App",
+    "PLEASE": "Please go to our platform",
+    "APP_DESCRIPTION": "There you will find all of our current and upcoming investment opportunities.\nYou can also use the chat function to schedule a call with one of our representatives or let us know how can we best help you achieve your investing goals."
   }
 }

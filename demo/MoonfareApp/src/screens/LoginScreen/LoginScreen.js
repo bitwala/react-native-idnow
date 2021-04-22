@@ -95,12 +95,11 @@ const LoginScreenComponent = ({navigation, eva}) => {
   const {style} = eva;
 
   const onPress = () => {
-    // const value = inputRef.current.getValue();
-    // if (value) {
-    //   const {email, password} = values;
-    //   dispatch(doLogin({email, password}));
-    // }
-    navigate('IdentificationComplete');
+    const value = inputRef.current.getValue();
+    if (value) {
+      const {email, password} = values;
+      dispatch(doLogin({email, password}));
+    }
   };
 
   return (

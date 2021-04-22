@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 import styles from './LearnMoreScreen.style';
 import SliderScreen from './SliderScreenComponent';
 import images from '../../constants/images';
+import {View} from 'react-native';
+import Text from '../../components/Text';
+import GoToAppComponent from './GoToAppComponent';
 
 const propTypes = {
   eva: PropTypes.shape({
@@ -60,6 +63,9 @@ const LearnMoreComponent = ({navigation, eva}) => {
           title={each.title}
         />
       ))}
+      <View>
+        <GoToAppComponent navigation={navigation} eva={eva} />
+      </View>
     </ViewPager>
   );
 };

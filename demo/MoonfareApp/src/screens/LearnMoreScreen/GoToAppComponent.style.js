@@ -33,7 +33,7 @@ export default theme => ({
   successTitleText: {
     width: '100%',
     textAlign: 'center',
-    padding: 20,
+    padding: 10,
     fontSize: theme['font-size-large'],
     fontWeight: theme['font-thin'],
   },
@@ -46,14 +46,19 @@ export default theme => ({
     justifyContent: 'center',
   },
 
+  forgotView: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: theme['color-primary-default'],
+  },
+
   learnMoreButton: {
     flex: 1,
     borderRadius: 20,
   },
 
   textStyle: {
-    fontSize: theme['font-size-extra-small'],
-    color: theme['text-hint-color'],
     fontWeight: theme['font-medium'],
   },
 });
