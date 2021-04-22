@@ -1,12 +1,7 @@
 import axios from 'axios';
-
-import {API_URL} from '../constants/url';
 import I18n from '../i18n';
 
-import {getHeaders} from './AuthHelper';
-
-import {store} from '../store';
-import {getBaseUrl} from './UrlHelper';
+import {getHeaders, getBaseUrl} from './AuthHelper';
 
 const parseErrorCode = error => {
   if (error.response) {
@@ -32,10 +27,6 @@ API.interceptors.request.use(
     config.baseURL = await getBaseUrl();
     if (headers) {
       config.headers = headers;
-      const {accountId} = headers;
-      if (accountId) {
-        config.url = `${API_URL}accounts/${accountId}/${config.url}`;
-      }
     }
     return config;
   },

@@ -10,9 +10,6 @@ import {
 import {withStyles} from '@ui-kitten/components';
 import t from 'tcomb-form-native';
 import PropTypes from 'prop-types';
-
-import {doLogin} from '../../actions/auth';
-
 import styles from './LoginScreen.style';
 import {Email, Password} from '../../helpers/formHelper';
 import TextInputField from '../../components/TextInputField';
@@ -22,6 +19,7 @@ import i18n from '../../i18n';
 import LoaderButton from '../../components/LoaderButton';
 import {ScrollView} from 'react-native-gesture-handler';
 import CustomText from '../../components/Text';
+import {doLogin} from '../../actions/auth';
 
 const {Form} = t.form;
 const LoginForm = t.struct({

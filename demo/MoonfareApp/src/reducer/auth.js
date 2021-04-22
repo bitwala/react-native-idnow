@@ -1,31 +1,27 @@
-import {
-  LOGIN,
-  LOGIN_SUCCESS,
-  LOGIN_ERROR,
-  SET_AUTH_HEADER,
-  UPDATE_USER,
-} from '../constants/actions';
+import {LOGIN_SUCCESS, LOGIN_ERROR, UPDATE_USER} from '../constants/actions';
+import {startVideoVerification} from '../helpers/IDNowHelper';
 
 export const initialState = {
   user: {},
   headers: {},
   isLoggedIn: false,
-  isLoggingIn: false,
   isResettingPassword: false,
   isUpdating: true,
   error: {},
   success: {},
 };
 
-export default (state = initialState, action) => {
+export default async (state = initialState, action) => {
   switch (action.type) {
-    case LOGIN:
-      return {...state, isLoggingIn: true};
-
     case LOGIN_SUCCESS:
+      const option = {
+        showVideoOverviewCheck: true,
+        transactionToken: action.payload.attributes.sessionId,
+        environment: 'TEST',
+      };
+      await startVideoVerification(option);
       return {
         ...state,
-        isLoggingIn: false,
         isLoggedIn: true,
         user: action.payload,
         error: {},
@@ -34,16 +30,10 @@ export default (state = initialState, action) => {
     case LOGIN_ERROR:
       return {
         ...state,
-        isLoggingIn: false,
         isLoggedIn: false,
         error: action.payload,
         user: null,
         success: {},
-      };
-    case SET_AUTH_HEADER:
-      return {
-        ...state,
-        headers: action.payload,
       };
 
     case UPDATE_USER:
