@@ -36,5 +36,9 @@
     "IDENTIFICATION": "Identification",
     "EnterIdentID": "Please enter and confirm your Iden-ID to start the verification",
     "SUCCESS_MESSAGE": "You have successfully completed your verification and unlocked exclusive moonfare member features"
+  },
+  "IDENTIFICATION_FAILED": {
+    "TRY_AGAIN": "Try again",
+    "FAILED": "Identification Failed"
   }
 }

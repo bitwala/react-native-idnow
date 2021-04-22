@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React from 'react';
 import {useDispatch} from 'react-redux';
 import {View, Image, Dimensions, SafeAreaView} from 'react-native';
 import {withStyles} from '@ui-kitten/components';
@@ -16,41 +16,18 @@ const propTypes = {
   eva: PropTypes.shape({
     style: PropTypes.object,
   }).isRequired,
-  onLogin: PropTypes.func,
-  isLoggingIn: PropTypes.bool,
   navigation: PropTypes.shape({
     navigate: PropTypes.func.isRequired,
   }).isRequired,
-  resetAuth: PropTypes.func,
-  installationUrl: PropTypes.string,
-};
-
-const defaultProps = {
-  onLogin: () => {},
-  isLoggingIn: false,
 };
 
 const IdentificationCompleteComponent = ({navigation, eva}) => {
   const dispatch = useDispatch();
-  const inputRef = useRef(null);
-
-  const [values, setValues] = useState({
-    identId: '',
-  });
-
-  const onChange = value => {
-    setValues(value);
-  };
 
   const onPress = () => {
-    const value = inputRef.current.getValue();
-    if (value) {
-      const {email, password} = values;
-      dispatch(doLogin({email, password}));
-    }
+    dispatch(doLogin());
   };
 
-  const {navigate} = navigation;
   const {style} = eva;
 
   return (
@@ -90,7 +67,6 @@ const IdentificationCompleteComponent = ({navigation, eva}) => {
 };
 
 IdentificationCompleteComponent.propTypes = propTypes;
-IdentificationCompleteComponent.defaultProps = defaultProps;
 const IdentificationCompleteScreen = withStyles(
   IdentificationCompleteComponent,
   styles,

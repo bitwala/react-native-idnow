@@ -15,59 +15,42 @@ export default theme => ({
     marginTop: Dimensions.get('window').height * 0.07,
   },
   logo: {
-    width: deviceWidth * 0.2,
-    height: deviceWidth * 0.7,
+    height: deviceWidth * 0.3,
     aspectRatio: 2,
     resizeMode: 'contain',
   },
   titleView: {
     marginTop: Dimensions.get('window').height * 0.01,
-    paddingLeft: 40,
-    paddingRight: 40,
+    padding: 20,
   },
   titleText: {
     width: '100%',
     textAlign: 'center',
+    padding: 20,
+    fontSize: theme['font-size-extra-large'],
+    fontWeight: theme['font-bold'],
+  },
+  successTitleText: {
+    width: '100%',
+    textAlign: 'center',
+    padding: 10,
     fontSize: theme['font-size-large'],
-    fontWeight: theme['font-medium'],
+    fontWeight: theme['font-thin'],
   },
 
-  formView: {
-    paddingLeft: 40,
-    paddingRight: 40,
-    marginTop: Dimensions.get('window').height * 0.02,
-  },
-
-  loginButtonView: {
+  learnMoreButtonView: {
     paddingTop: 16,
+    margin: 16,
+    borderRadius: 15,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
-  loginButton: {
+  learnMoreButton: {
     flex: 1,
   },
-  loginButtonText: {
-    color: theme['text-control-color'],
-    fontWeight: theme['font-medium'],
-    fontSize: theme['font-size-large'],
-  },
 
-  separator: {
-    color: theme['text-hint-color'],
-  },
-  forgotView: {
-    flex: 1,
-    alignItems: 'flex-end',
-  },
-
-  accountView: {
-    paddingTop: 16,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   textStyle: {
     fontSize: theme['font-size-extra-small'],
     color: theme['text-hint-color'],
