@@ -9,7 +9,7 @@ const LoadingIndicator = () => {
   return <ActivityIndicator size="small" color={theme['loader-color']} />;
 };
 
-const LoaderButton = ({loading, text, ...customProps}) => {
+const LoaderButton = ({loading, text, onPress, ...customProps}) => {
   const {
     eva: {
       style: {textStyle},
@@ -18,6 +18,7 @@ const LoaderButton = ({loading, text, ...customProps}) => {
 
   return (
     <Button
+      onPress = {onPress}
       {...customProps}
       {...(loading && {accessoryLeft: LoadingIndicator})}>
       {loading ? null : <CustomText style={textStyle}>{text}</CustomText>}

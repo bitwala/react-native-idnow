@@ -37,5 +37,8 @@ allprojects {
         maven {
             url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-4.2.0"
         }
+        maven {
+          url  "https://dl.bintray.com/okta/com.okta.android"
+        }
     }
 }

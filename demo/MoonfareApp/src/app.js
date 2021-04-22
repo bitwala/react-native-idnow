@@ -7,6 +7,7 @@ import {ApplicationProvider} from '@ui-kitten/components';
 import i18n from './i18n';
 import {theme} from './theme';
 import * as eva from '@eva-design/eva';
+import { createConfig } from '@okta/okta-react-native';
 
 export default class App extends Component {
   componentDidMount() {
@@ -14,6 +15,7 @@ export default class App extends Component {
       'hardwareBackPress',
       this.handleBackButtonClick,
     );
+
   }
 
   componentWillUnmount() {

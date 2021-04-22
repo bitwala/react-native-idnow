@@ -1,9 +1,23 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Button, Alert} from 'react-native';
 import {IDnowManager} from 'react-native-idnow';
+import {createConfig} from '@okta/okta-react-native';
 
 interface Props {}
 export default class App extends Component<Props> {
+  componentDidMount() {
+    createConfig({
+      // issuer: 'https://moonfare.oktapreview.com/oauth2/default', // optional
+      clientId: '0oa1hw0ibx7QAqcEs0x7',
+      redirectUri: 'http://localhost:8081',
+      endSessionRedirectUri: 'http://localhost:8081',
+      discoveryUri: 'https://moonfare.oktapreview.com',
+      scopes: ['openid', 'profile', 'offline_access'],
+      requireHardwareBackedKeyStore: false,
+      androidChromeTabColor: '#FF00AA',
+    });
+  }
+
   render() {
     const options = {
       showVideoOverviewCheck: true,
