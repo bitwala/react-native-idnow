@@ -24,11 +24,12 @@ const propTypes = {
 const IdentificationFailedComponent = ({navigation, eva}) => {
   const dispatch = useDispatch();
 
-  const onPress = () => {
-    dispatch(doLogin());
-  };
-
+  const {navigate} = navigation;
   const {style} = eva;
+
+  const onPress = () => {
+    navigate('IdentificationComplete');
+  };
 
   return (
     <SafeAreaView style={style.keyboardView}>
@@ -37,7 +38,7 @@ const IdentificationFailedComponent = ({navigation, eva}) => {
           height: Dimensions.get('window').height,
         }}>
         <View style={style.logoView}>
-          <Image style={style.logo} source={images.appLogo} />
+          <Image style={style.logo} source={images.iconFailed} />
         </View>
 
         <View style={style.titleView}>
@@ -48,19 +49,7 @@ const IdentificationFailedComponent = ({navigation, eva}) => {
 
         <View style={style.titleView}>
           <CustomText style={style.successTitleText}>
-            {i18n.t('IDENTIFICATION_COMPLETE.SUCCESS_MESSAGE')}
-          </CustomText>
-        </View>
-
-        <View style={style.titleView}>
-          <CustomText style={style.successTitleText}>
-            {i18n.t('IDENTIFICATION_COMPLETE.SUCCESS_MESSAGE')}
-          </CustomText>
-        </View>
-
-        <View style={style.titleView}>
-          <CustomText style={style.successTitleText}>
-            {i18n.t('IDENTIFICATION_COMPLETE.SUCCESS_MESSAGE')}
+            {i18n.t('IDENTIFICATION_FAILED.ERROR_MESSAGE')}
           </CustomText>
         </View>
 

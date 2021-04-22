@@ -31,7 +31,9 @@ const App = ({eva: {style}}) => {
       enabled>
       <SafeAreaView style={style.container}>
         <NavigationContainer ref={navigationRef}>
-          <Stack.Navigator initialRouteName={'Login'} headerMode={'none'}>
+          <Stack.Navigator
+            initialRouteName={'IdentificationFailed'}
+            headerMode={'none'}>
             <Fragment>
               <Stack.Screen name="Login" component={LoginScreen} />
               <Stack.Screen
