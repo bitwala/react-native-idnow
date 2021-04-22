@@ -91,16 +91,17 @@ const LoginScreenComponent = ({navigation, eva}) => {
     setValues(value);
   };
 
-  const onPress = () => {
-    const value = inputRef.current.getValue();
-    if (value) {
-      const {email, password} = values;
-      dispatch(doLogin({email, password}));
-    }
-  };
-
   const {navigate} = navigation;
   const {style} = eva;
+
+  const onPress = () => {
+    // const value = inputRef.current.getValue();
+    // if (value) {
+    //   const {email, password} = values;
+    //   dispatch(doLogin({email, password}));
+    // }
+    navigate('ResetPassword');
+  };
 
   return (
     <SafeAreaView style={style.keyboardView}>

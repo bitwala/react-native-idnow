@@ -31,5 +31,9 @@
     "SUBTITLE": "Voulez-vous vraiment quitter ?",
     "CANCEL": "Annuler",
     "OK": "OK"
+  },
+  "VERIFICATION": {
+    "IDENTIFICATION": "Identification",
+    "EnterIdentID": "Please enter and confirm your Iden-ID to start the verification"
   }
 }

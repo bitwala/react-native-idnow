@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
 import {navigationRef} from './helpers/NavigationHelper';
 import {withStyles} from '@ui-kitten/components';
+import IdentificationCompleteScreen from './screens/IdentificationCompleteScreen/IdentifictionCompleteScreen';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,10 @@ const App = ({eva: {style}}) => {
           <Stack.Navigator initialRouteName={'Login'} headerMode={'none'}>
             <Fragment>
               <Stack.Screen name="Login" component={LoginScreen} />
+              <Stack.Screen
+                name="ResetPassword"
+                component={IdentificationCompleteScreen}
+              />
             </Fragment>
           </Stack.Navigator>
         </NavigationContainer>

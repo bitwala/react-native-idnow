@@ -1,4 +1,4 @@
-const appLogo = require('../assets/images/appLogo.jpg');
+const appLogo = require('../assets/images/appLogo.png');
 const login = require('../assets/images/login.jpg');
 
 export default {
