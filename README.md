@@ -6,6 +6,7 @@ Demo App inside the Demo folder.
 
 # To Run
 
+
 - Android : Install Android SDK and studio (setup emulator for Test) - https://developer.android.com/studio/
 
 yarn run android
