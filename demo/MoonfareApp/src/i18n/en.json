@@ -33,7 +33,13 @@
     "OK": "Ok"
   },
   "IDENTIFICATION_COMPLETE": {
-    "IDENTIFICATION": "Identification",
-    "EnterIdentID": "Please enter and confirm your Iden-ID to start the verification"
+    "IDENTIFICATION": "Identification Complete",
+    "EnterIdentID": "Please enter and confirm your Iden-ID to start the verification",
+    "SUCCESS_MESSAGE": "You have successfully completed your verification and unlocked exclusive moonfare member features",
+    "LEARN_MORE": "Learn More"
+  },
+  "IDENTIFICATION_FAILED": {
+    "FAILED": "Identification Failed",
+    "TRY_AGAIN": "Try again"
   }
 }
