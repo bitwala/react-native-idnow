@@ -110,7 +110,7 @@ const LoginScreenComponent = ({navigation, eva}) => {
           height: Dimensions.get('window').height,
         }}>
         <View style={style.logoView}>
-          <Image style={style.logo} source={images.login} />
+          <Image style={style.logo} source={images.moonfareLogoDarkblue} />
         </View>
         <View style={style.titleView}>
           <CustomText style={style.titleText}>

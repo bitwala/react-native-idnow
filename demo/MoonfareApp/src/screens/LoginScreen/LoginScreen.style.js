@@ -15,9 +15,8 @@ export default theme => ({
     marginTop: Dimensions.get('window').height * 0.07,
   },
   logo: {
-    width: deviceWidth * 0.2,
-    height: deviceWidth * 0.7,
-    aspectRatio: 2,
+    width:deviceWidth * 0.5,
+    height: deviceWidth * 0.5,
     resizeMode: 'contain',
   },
   titleView: {
@@ -47,6 +46,9 @@ export default theme => ({
 
   loginButton: {
     flex: 1,
+    backgroundColor: 'rgb(237,99,63)',
+    borderRadius: 10
+
   },
   loginButtonText: {
     color: theme['text-control-color'],
