@@ -100,7 +100,7 @@ const LoginScreenComponent = ({navigation, eva}) => {
     //   const {email, password} = values;
     //   dispatch(doLogin({email, password}));
     // }
-    navigate('ResetPassword');
+    navigate('IdentificationComplete');
   };
 
   return (

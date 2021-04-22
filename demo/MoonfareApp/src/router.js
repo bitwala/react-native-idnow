@@ -7,6 +7,7 @@ import LoginScreen from './screens/LoginScreen/LoginScreen';
 import {navigationRef} from './helpers/NavigationHelper';
 import {withStyles} from '@ui-kitten/components';
 import IdentificationCompleteScreen from './screens/IdentificationCompleteScreen/IdentifictionCompleteScreen';
+import IdentificationFailedScreen from './screens/IdentificationFailedScreen/IdentifictionFailedScreen';
 
 const Stack = createStackNavigator();
 
@@ -33,8 +34,12 @@ const App = ({eva: {style}}) => {
             <Fragment>
               <Stack.Screen name="Login" component={LoginScreen} />
               <Stack.Screen
-                name="ResetPassword"
+                name="IdentificationComplete"
                 component={IdentificationCompleteScreen}
+              />
+              <Stack.Screen
+                name="IdentificationFailed"
+                component={IdentificationFailedScreen}
               />
             </Fragment>
           </Stack.Navigator>
