@@ -48,5 +48,11 @@
     "APP": "Go To App",
     "PLEASE": "Please go to our platform",
     "APP_DESCRIPTION": "There you will find all of our current and upcoming investment opportunities.\nYou can also use the chat function to schedule a call with one of our representatives or let us know how can we best help you achieve your investing goals."
+  },
+  "IDENTIFICATION": {
+    "TITLE": "Identification",
+    "INSTRUCTION": "Please enter and confirm your Ident-ID.\n to start the identification",
+    "CONFIRM": "Confirm",
+    "WRONG_CODE": "The Ident code does not seem to be correct"
   }
 }

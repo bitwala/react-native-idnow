@@ -1,14 +1,17 @@
 import React, {Fragment} from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {SafeAreaView, KeyboardAvoidingView, Platform} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaView, KeyboardAvoidingView, Platform } from 'react-native';
 import PropTypes from 'prop-types';
-import {createStackNavigator} from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
-import {navigationRef} from './helpers/NavigationHelper';
-import {withStyles} from '@ui-kitten/components';
+import { navigationRef } from './helpers/NavigationHelper';
+import { withStyles } from '@ui-kitten/components';
 import IdentificationCompleteScreen from './screens/IdentificationCompleteScreen/IdentifictionCompleteScreen';
 import IdentificationFailedScreen from './screens/IdentificationFailedScreen/IdentifictionFailedScreen';
 import LearnMoreScreen from './screens/LearnMoreScreen/LearnMoreScreen';
+import LoaderScreen from './screens/Loader/LoaderScreen';
+import IdNowCodeScreen from './screens/IdNowCodeScreen/IdNowCodeScreen';
+import Identification from '../App';
 
 const Stack = createStackNavigator();
 
@@ -31,17 +34,18 @@ const App = ({eva: {style}}) => {
       enabled>
       <SafeAreaView style={style.container}>
         <NavigationContainer ref={navigationRef}>
-          <Stack.Navigator
-            initialRouteName={'IdentificationFailed'}
-            headerMode={'none'}>
+          <Stack.Navigator initialRouteName={'LoaderScreen'} headerMode={'none'}>
             <Fragment>
-              <Stack.Screen name="Login" component={LoginScreen} />
+              <Stack.Screen name='LoaderScreen' component={LoaderScreen} />
+              <Stack.Screen name='IdNowCodeScreen' component={IdNowCodeScreen} />
+              <Stack.Screen name='Login' component={LoginScreen} />
+              <Stack.Screen name='IdentificationScreen' component={Identification} />
               <Stack.Screen
-                name="IdentificationComplete"
+                name='IdentificationComplete'
                 component={IdentificationCompleteScreen}
               />
               <Stack.Screen
-                name="IdentificationFailed"
+                name='IdentificationFailed'
                 component={IdentificationFailedScreen}
               />
               <Stack.Screen name="LearnMore" component={LearnMoreScreen} />
