@@ -3,6 +3,7 @@ import validator from 'validator';
 // eslint-disable-next-line no-useless-escape
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const nameRegex = /^.{2}/;
+const idnowCodeRegex = /^[a-zA-Z\-0-9\-\ ]{5,15}/;
 const passwordRegex = /^.{6}/;
 
 export const isStringEmail = email => {
@@ -16,6 +17,11 @@ export const isStringName = name => {
   return re.test(name);
 };
 export const Name = t.refinement(t.String, name => isStringName(name));
+
+export const IdnowCode = text => {
+  const re = idnowCodeRegex;
+  return re.test(text);
+};
 
 export const isStringUrl = url => {
   return validator.isURL(url);

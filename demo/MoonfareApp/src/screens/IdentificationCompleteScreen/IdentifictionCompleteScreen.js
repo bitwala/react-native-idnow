@@ -1,5 +1,4 @@
 import React from 'react';
-import {useDispatch} from 'react-redux';
 import {View, Image, Dimensions, SafeAreaView} from 'react-native';
 import {withStyles} from '@ui-kitten/components';
 import PropTypes from 'prop-types';
@@ -10,7 +9,6 @@ import i18n from '../../i18n';
 import LoaderButton from '../../components/LoaderButton';
 import {ScrollView} from 'react-native-gesture-handler';
 import CustomText from '../../components/Text';
-import {doLogin} from '../../actions/auth';
 
 const propTypes = {
   eva: PropTypes.shape({
@@ -22,13 +20,12 @@ const propTypes = {
 };
 
 const IdentificationCompleteComponent = ({navigation, eva}) => {
-  const dispatch = useDispatch();
+  const {navigate} = navigation;
+  const {style} = eva;
 
   const onPress = () => {
-    dispatch(doLogin());
+    navigate('LearnMore');
   };
-
-  const {style} = eva;
 
   return (
     <SafeAreaView style={style.keyboardView}>
@@ -37,7 +34,7 @@ const IdentificationCompleteComponent = ({navigation, eva}) => {
           height: Dimensions.get('window').height,
         }}>
         <View style={style.logoView}>
-          <Image style={style.logo} source={images.appLogo} />
+          <Image style={style.logo} source={images.iconSuccess} />
         </View>
 
         <View style={style.titleView}>
