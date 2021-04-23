@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {
   View,
@@ -22,7 +22,7 @@ import {ScrollView} from 'react-native-gesture-handler';
 import CustomText from '../../components/Text';
 import axios from 'axios';
 
-import {signIn} from '@okta/okta-react-native';
+import {signIn, createConfig} from '@okta/okta-react-native';
 
 const {Form} = t.form;
 const LoginForm = t.struct({
@@ -51,6 +51,26 @@ const defaultProps = {
 const LoginScreenComponent = ({navigation, eva}) => {
   const dispatch = useDispatch();
   const inputRef = useRef(null);
+
+  useEffect(() => {
+    const initOkta = async () => {
+      try{
+        await createConfig({
+          // issuer: 'https://moonfare.oktapreview.com/oauth2/default', // optional
+          clientId: '0oa1hw0ibx7QAqcEs0x7',
+          redirectUri: 'http://localhost:8081',
+          endSessionRedirectUri: 'http://localhost:8081',
+          discoveryUri: 'https://moonfare.oktapreview.com',
+          scopes: ['openid', 'profile', 'offline_access'],
+          requireHardwareBackedKeyStore: false,
+          androidChromeTabColor: '#FF00AA',
+        });
+      }catch (e) {
+        console.log("init Okta failed")
+      }
+    };
+    initOkta();
+  }, []);
 
   const [values, setValues] = useState({
     // My Okta credentials
@@ -111,7 +131,9 @@ const LoginScreenComponent = ({navigation, eva}) => {
         'http://192.168.178.21:3001/api/v1/context/auth/user',
         {headers: {Authorization: result1.access_token}},
       );
-      navigate()
+
+      console.log({user})
+      navigate('LearnMore');
     } catch (e) {
       console.log({e});
     } finally {
