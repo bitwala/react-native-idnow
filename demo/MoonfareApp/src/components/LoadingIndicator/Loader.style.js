@@ -1,9 +1,18 @@
-import {Dimensions} from 'react-native';
+import { Dimensions } from 'react-native';
 
 const deviceWidth = Dimensions.get('window').width;
 const deviceHeight = Dimensions.get('window').height;
 
 export default theme => ({
+  backgroundVideo: {
+    height: deviceHeight,
+    position: 'absolute',
+    top: -50,
+    left: 0,
+    alignItems: 'stretch',
+    bottom: 0,
+    right: 0,
+  },
   keyboardView: {
     flex: 1,
     flexDirection: 'column',
@@ -16,42 +25,59 @@ export default theme => ({
     marginTop: Dimensions.get('window').height * 0.07,
   },
   logo: {
-    width: deviceWidth * 0.8,
-    height: deviceHeight * 0.4,
+    width: deviceWidth * 0.2,
+    height: deviceWidth * 0.7,
+    aspectRatio: 2,
     resizeMode: 'contain',
   },
   titleView: {
     marginTop: Dimensions.get('window').height * 0.01,
-    padding: 20,
+    paddingLeft: 40,
+    paddingRight: 40,
   },
   titleText: {
     width: '100%',
     textAlign: 'center',
-    padding: 20,
-    fontSize: theme['font-size-extra-large'],
-    fontWeight: theme['font-bold'],
-  },
-  successTitleText: {
-    width: '100%',
-    textAlign: 'center',
-    padding: 10,
     fontSize: theme['font-size-large'],
-    fontWeight: theme['font-thin'],
+    fontWeight: theme['font-medium'],
   },
 
-  learnMoreButtonView: {
+  formView: {
+    paddingLeft: 40,
+    paddingRight: 40,
+    marginTop: Dimensions.get('window').height * 0.02,
+  },
+
+  loginButtonView: {
     paddingTop: 16,
-    margin: 16,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
-  learnMoreButton: {
+  loginButton: {
     flex: 1,
-    borderRadius: 20,
+  },
+  loginButtonText: {
+    color: theme['text-control-color'],
+    fontWeight: theme['font-medium'],
+    fontSize: theme['font-size-large'],
   },
 
+  separator: {
+    color: theme['text-hint-color'],
+  },
+  forgotView: {
+    flex: 1,
+    alignItems: 'flex-end',
+  },
+
+  accountView: {
+    paddingTop: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   textStyle: {
     fontSize: theme['font-size-extra-small'],
     color: theme['text-hint-color'],

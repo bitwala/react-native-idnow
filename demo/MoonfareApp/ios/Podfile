@@ -36,6 +36,8 @@ target 'MoonfareApp' do
 
   pod 'IDnowSDK', '4.1.7'
 
+  pod 'react-native-video', :path => '../node_modules/react-native-video'
+
   target 'MoonfareAppTests' do
     inherit! :search_paths
     # Pods for testing

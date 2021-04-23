@@ -1,5 +1,5 @@
-import React, {useState, useRef} from 'react';
-import {useSelector, useDispatch} from 'react-redux';
+import React, { useState, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import {
   View,
   Image,
@@ -7,24 +7,24 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
-import {withStyles} from '@ui-kitten/components';
+import { withStyles } from '@ui-kitten/components';
 import t from 'tcomb-form-native';
 import PropTypes from 'prop-types';
-import styles from './LoginScreen.style';
-import {Email, Password} from '../../helpers/formHelper';
+import styles from './IdNowCodeScreen.style';
+import { Name } from '../../helpers/formHelper';
 import TextInputField from '../../components/TextInputField';
 import images from '../../constants/images';
 
 import i18n from '../../i18n';
 import LoaderButton from '../../components/LoaderButton';
-import {ScrollView} from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native-gesture-handler';
 import CustomText from '../../components/Text';
-import {doLogin} from '../../actions/auth';
+import { doLogin, saveIdentCode } from '../../actions/auth';
+import Logo from '../../components/Logo';
 
-const {Form} = t.form;
+const { Form } = t.form;
 const LoginForm = t.struct({
-  email: Email,
-  password: Password,
+  code: Name,
 });
 
 const propTypes = {
@@ -41,46 +41,36 @@ const propTypes = {
 };
 
 const defaultProps = {
-  onLogin: () => {},
+  onLogin: () => {
+  },
   isLoggingIn: false,
 };
 
-const LoginScreenComponent = ({navigation, eva}) => {
+const IdNowCodeScreenComponent = ({ navigation, eva }) => {
   const dispatch = useDispatch();
   const inputRef = useRef(null);
 
   const [values, setValues] = useState({
-    email: '',
-    password: '',
+    code: '',
   });
 
   const options = {
     fields: {
-      email: {
-        placeholder: '',
-        template: props => <TextInputField {...props} />,
-        keyboardType: 'email-address',
-        error: i18n.t('LOGIN.EMAIL_ERROR'),
-
-        autoCompleteType: false,
-        autoCorrect: false,
-        config: {
-          label: i18n.t('LOGIN.EMAIL'),
-        },
-        autoCapitalize: 'none',
-      },
-      password: {
-        placeholder: '',
+      code: {
+        placeholder: 'TST-XXXX',
         template: props => <TextInputField {...props} />,
         keyboardType: 'default',
-        autoCapitalize: 'none',
+        error: i18n.t('IDENTIFICATION.WRONG_CODE'),
         autoCompleteType: false,
         autoCorrect: false,
-        error: i18n.t('LOGIN.PASSWORD_ERROR'),
+        textTransform: 'uppercase',
+        textAlign: 'center',
+        align: 'center',
+        autoCapitalize: 'none',
         config: {
-          label: i18n.t('LOGIN.PASSWORD'),
+          label: '',
         },
-        secureTextEntry: true,
+        style: eva.style.codeInput,
       },
     },
   };
@@ -91,14 +81,15 @@ const LoginScreenComponent = ({navigation, eva}) => {
     setValues(value);
   };
 
-  const {navigate} = navigation;
-  const {style} = eva;
+  const { navigate } = navigation;
+  const { style } = eva;
 
   const onPress = () => {
     const value = inputRef.current.getValue();
     if (value) {
-      const {email, password} = values;
-      dispatch(doLogin({email, password}));
+      const { code } = values;
+      dispatch(saveIdentCode({ code }));
+      navigate('IdentificationScreen');
     }
   };
 
@@ -108,16 +99,19 @@ const LoginScreenComponent = ({navigation, eva}) => {
         style={{
           height: Dimensions.get('window').height,
         }}>
-        <View style={style.logoView}>
-          <Image style={style.logo} source={images.moonfareLogoDarkblue} />
-        </View>
+        <Logo />
         <View style={style.titleView}>
           <CustomText style={style.titleText}>
-            {i18n.t('LOGIN.TITLE')}
+            {i18n.t('IDENTIFICATION.TITLE')}
           </CustomText>
         </View>
 
         <View style={style.contentView}>
+          <View style={style.formView}>
+            <CustomText style={style.textStyle}>
+              {i18n.t('IDENTIFICATION.INSTRUCTION')}
+            </CustomText>
+          </View>
           <View style={style.formView}>
             <Form
               ref={inputRef}
@@ -126,21 +120,14 @@ const LoginScreenComponent = ({navigation, eva}) => {
               value={values}
               onChange={value => onChange(value)}
             />
-            <TouchableOpacity
-              style={style.forgotView}
-              onPress={() => navigate('ResetPassword')}>
-              <CustomText style={style.textStyle}>
-                {i18n.t('LOGIN.FORGOT_PASSWORD')}
-              </CustomText>
-            </TouchableOpacity>
             <View style={style.loginButtonView}>
               <LoaderButton
                 style={style.loginButton}
                 loading={isLoggingIn}
                 textStyle={style.buttonTextStyle}
                 onPress={() => onPress()}
-                size="large"
-                text={i18n.t('LOGIN.LOGIN')}
+                size='large'
+                text={i18n.t('IDENTIFICATION.CONFIRM')}
               />
             </View>
           </View>
@@ -150,8 +137,8 @@ const LoginScreenComponent = ({navigation, eva}) => {
   );
 };
 
-LoginScreenComponent.propTypes = propTypes;
-LoginScreenComponent.defaultProps = defaultProps;
-const LoginScreen = withStyles(LoginScreenComponent, styles);
+IdNowCodeScreenComponent.propTypes = propTypes;
+IdNowCodeScreenComponent.defaultProps = defaultProps;
+const IdNowCodeScreen = withStyles(IdNowCodeScreenComponent, styles);
 
-export default LoginScreen;
+export default IdNowCodeScreen;

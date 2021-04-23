@@ -41,7 +41,6 @@ export default theme => ({
   learnMoreButtonView: {
     paddingTop: 16,
     margin: 16,
-    borderRadius: 15,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
@@ -49,6 +48,7 @@ export default theme => ({
 
   learnMoreButton: {
     flex: 1,
+    borderRadius: 20,
   },
 
   textStyle: {

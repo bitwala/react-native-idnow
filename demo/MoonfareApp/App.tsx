@@ -12,9 +12,9 @@ export default class App extends Component<Props> {
     };
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>react-native-idnow demo</Text>
+        <Text style={styles.welcome}>Moonfare Identification</Text>
         <Button
-          title="Start video identification"
+          title='Start video identification'
           onPress={async () => {
             try {
               const resp = await IDnowManager.startVideoIdent(options);

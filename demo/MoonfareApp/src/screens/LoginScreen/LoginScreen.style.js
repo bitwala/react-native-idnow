@@ -46,9 +46,7 @@ export default theme => ({
 
   loginButton: {
     flex: 1,
-    backgroundColor: 'rgb(237,99,63)',
-    borderRadius: 10
-
+    borderRadius: 20,
   },
   loginButtonText: {
     color: theme['text-control-color'],

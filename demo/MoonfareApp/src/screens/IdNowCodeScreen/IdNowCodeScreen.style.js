@@ -1,4 +1,4 @@
-import {Dimensions} from 'react-native';
+import { Dimensions } from 'react-native';
 
 const deviceWidth = Dimensions.get('window').width;
 
@@ -15,44 +15,71 @@ export default theme => ({
     marginTop: Dimensions.get('window').height * 0.07,
   },
   logo: {
-    height: deviceWidth * 0.3,
+    width: deviceWidth * 0.2,
+    height: deviceWidth * 0.7,
     aspectRatio: 2,
     resizeMode: 'contain',
   },
   titleView: {
     marginTop: Dimensions.get('window').height * 0.01,
-    padding: 20,
+    paddingLeft: 40,
+    paddingRight: 40,
   },
   titleText: {
     width: '100%',
     textAlign: 'center',
-    padding: 20,
-    fontSize: theme['font-size-extra-large'],
+    fontSize: 40,
     fontWeight: theme['font-bold'],
-  },
-  successTitleText: {
-    width: '100%',
-    textAlign: 'center',
-    padding: 20,
-    fontSize: theme['font-size-large'],
-    fontWeight: theme['font-thin'],
+    paddingTop: 60,
+    paddingBottom: 60,
   },
 
-  learnMoreButtonView: {
+  formView: {
+    paddingLeft: 40,
+    paddingRight: 40,
+    marginTop: Dimensions.get('window').height * 0.02,
+  },
+
+  codeInput: {
+    textAlign: 'center',
+    fontSize: 40,
+    borderRadius: 20,
+  },
+
+  loginButtonView: {
     paddingTop: 16,
-    margin: 16,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
-  learnMoreButton: {
+  loginButton: {
     flex: 1,
     borderRadius: 20,
   },
+  loginButtonText: {
+    color: theme['text-control-color'],
+    fontWeight: theme['font-medium'],
+    fontSize: theme['font-size-large'],
+  },
 
+  separator: {
+    color: theme['text-hint-color'],
+  },
+  forgotView: {
+    flex: 1,
+    alignItems: 'flex-end',
+  },
+
+  accountView: {
+    paddingTop: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   textStyle: {
-    fontSize: theme['font-size-extra-small'],
+    textAlign: 'center',
+    fontSize: theme['font-size-small'],
     color: theme['text-hint-color'],
     fontWeight: theme['font-medium'],
   },

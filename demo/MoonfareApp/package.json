@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@eva-design/eva": "^2.1.0",
@@ -18,6 +19,7 @@
     "axios": "^0.21.1",
     "i18n": "^0.13.2",
     "i18n-js": "^3.8.0",
+    "patch-package": "^6.4.7",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.4",
@@ -28,6 +30,7 @@
     "react-native-screens": "^2.10.1",
     "react-native-snackbar": "^2.3.2",
     "react-native-svg": "^12.1.1",
+    "react-native-video": "^5.1.1",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
@@ -48,6 +51,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.57.0",
+    "react-native-safe-modules": "^1.0.0",
     "react-test-renderer": "16.9.0",
     "typescript": "3.7.2"
   },
