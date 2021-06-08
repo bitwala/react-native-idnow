@@ -5,9 +5,9 @@
  * @format
  */
 
-const blacklist = require('metro-config/src/defaults/blacklist');
+/* const blacklist = require('metro-config/src/defaults/blacklist');
 
-const blacklistRE = blacklist([/node_modules\/react-native-idnow\/demo\/.*/]);
+const blacklistRE = blacklist([/node_modules\/react-native-idnow\/demo\/.* /]);
 
 module.exports = {
   resolver: {
@@ -18,6 +18,17 @@ module.exports = {
       transform: {
         experimentalImportSupport: false,
         inlineRequires: false,
+      },
+    }),
+  },
+}; */
+
+module.exports = {
+  transformer: {
+    getTransformOptions: async () => ({
+      transform: {
+        experimentalImportSupport: false,
+        inlineRequires: true,
       },
     }),
   },
