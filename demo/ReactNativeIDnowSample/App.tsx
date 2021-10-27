@@ -17,7 +17,7 @@ export default class App extends Component<Props> {
   render() {
     const options = {
       showVideoOverviewCheck: true,
-      transactionToken: 'TST-QAFWM',
+      transactionToken: 'TST-MCHTG',
       environment: 'TEST',
     };
     return (
