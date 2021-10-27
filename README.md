@@ -60,11 +60,18 @@ react-native link react-native-idnow
    ```
      compile project(':react-native-idnow')
    ```
+   also in dependencies
+   ```
+     implementation 'de.idnow.android.sdk:idnow-platform:4.12.0'    
+   ```
 4. Add the following to `repositories` in `android/build.gradle`:
    ```
-    maven {
-      url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-4.2.0"
-    }
+      maven {
+         url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"            
+      }
+      maven {
+         url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-5.0.12.1"
+      }
    ```
    </details>
 
