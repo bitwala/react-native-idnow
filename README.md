@@ -70,7 +70,7 @@ react-native link react-native-idnow
          url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"            
       }
       maven {
-         url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-5.0.12"
+         url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-5.0.12.1"
       }
    ```
    </details>
