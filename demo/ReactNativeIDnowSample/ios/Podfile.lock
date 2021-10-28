@@ -24,7 +24,7 @@ PODS:
     - React-Core (= 0.61.4)
     - React-jsi (= 0.61.4)
     - ReactCommon/turbomodule/core (= 0.61.4)
-  - FLAnimatedImage (1.0.12)
+  - FLAnimatedImage (1.0.16)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -35,7 +35,7 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - IDnowSDK (4.1.7):
+  - IDnowSDK (5.0.12):
     - AFNetworking (~> 4.0)
     - FLAnimatedImage (~> 1.0)
     - libPhoneNumber-iOS (~> 0.9)
@@ -241,7 +241,7 @@ PODS:
     - React-cxxreact (= 0.61.4)
     - React-jsi (= 0.61.4)
     - ReactCommon/jscallinvoker (= 0.61.4)
-  - RNIdnow (0.1.1):
+  - RNIdnow (0.1.5):
     - React
   - SocketRocket (0.5.1)
   - Yoga (1.14.0)
@@ -252,7 +252,7 @@ DEPENDENCIES:
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - IDnowSDK (= 4.1.7)
+  - IDnowSDK (= 5.0.12)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -348,10 +348,10 @@ SPEC CHECKSUMS:
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   FBLazyVector: feb35a6b7f7b50f367be07f34012f34a79282fa3
   FBReactNativeSpec: 51477b84b1bf7ab6f9ef307c24e3dd675391be44
-  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  IDnowSDK: da5f008301381bba80c60a1fd67821244bfda464
+  IDnowSDK: 1e617fe60409747128e29a82d13518fee6903847
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RCTRequired: f3b3fb6f4723e8e52facb229d0c75fdc76773849
@@ -373,10 +373,10 @@ SPEC CHECKSUMS:
   React-RCTText: 21934e0a51d522abcd0a275407e80af45d6fd9ec
   React-RCTVibration: 0f76400ee3cec6edb9c125da49fed279340d145a
   ReactCommon: a6a294e7028ed67b926d29551aa9394fd989c24c
-  RNIdnow: 63354fdad0b813016a4e3196bab7cc4cd66abb74
+  RNIdnow: 7adbca36f40dc127915f92035788d0aff5e1c884
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
-PODFILE CHECKSUM: f1dee59541d06a46befc12db12f92ac6687f76b0
+PODFILE CHECKSUM: 59673a1cf92425ea9017aeeeec30a1274215d3c5
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

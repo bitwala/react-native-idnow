@@ -92,11 +92,16 @@ react-native link react-native-idnow
 - Add the following pod dependencies to your podfile:
 
 ```
-pod 'IDnowSDK', '4.1.7'
+use_frameworks! :linkage => :static
+pod 'IDnowSDK', '5.0.12'
 ```
 
 - Then, run the following command:
 
+```
+pod install --repo-update
+```
+or 
 ```
 pod install
 ```
