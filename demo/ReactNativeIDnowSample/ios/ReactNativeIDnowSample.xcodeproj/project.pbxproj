@@ -9,18 +9,17 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* ReactNativeIDnowSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeIDnowSampleTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativeIDnowSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeIDnowSampleTests.m */; };
-		44710B4711583BDA1D917B2E /* libPods-ReactNativeIDnowSample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAEC07ABADBD8F159109E5C /* libPods-ReactNativeIDnowSample-tvOS.a */; };
+		3620F3DA266F735900592F67 /* file-swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3620F3D9266F735900592F67 /* file-swift.swift */; };
+		3620F3DB266F735900592F67 /* file-swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3620F3D9266F735900592F67 /* file-swift.swift */; };
+		66268976693BF249655F7233 /* libPods-ReactNativeIDnowSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC093F3AAC2291185A51EAF /* libPods-ReactNativeIDnowSample.a */; };
+		6C0CB3C66756F21D37D94A90 /* libPods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D63631AF06D4E55F881A67 /* libPods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.a */; };
 		7882E1D0237559AA00F1F542 /* RNIdnow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7882E1CF237559AA00F1F542 /* RNIdnow.m */; };
-		B39DCE55D828956A83DA28E8 /* Pods_ReactNativeIDnowSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205983F422902FC1944C31B1 /* Pods_ReactNativeIDnowSampleTests.framework */; };
-		C4DB613C5AC26333242279E6 /* libPods-ReactNativeIDnowSample-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A6A37014BCA9EB08E4123 /* libPods-ReactNativeIDnowSample-tvOSTests.a */; };
-		F1FCF912B619B0ADC4E71BCD /* Pods_ReactNativeIDnowSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BBE227669D35F40EFA52FD /* Pods_ReactNativeIDnowSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		00E356EE1AD99517003FC87E /* ReactNativeIDnowSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeIDnowSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ReactNativeIDnowSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeIDnowSampleTests.m; sourceTree = "<group>"; };
-		0E3A6A37014BCA9EB08E4123 /* libPods-ReactNativeIDnowSample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeIDnowSample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* ReactNativeIDnowSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeIDnowSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeIDnowSample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactNativeIDnowSample/AppDelegate.m; sourceTree = "<group>"; };
@@ -53,23 +51,23 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeIDnowSample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeIDnowSample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeIDnowSample/main.m; sourceTree = "<group>"; };
-		205983F422902FC1944C31B1 /* Pods_ReactNativeIDnowSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactNativeIDnowSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21481F1F7360C2024835C56D /* Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactNativeIDnowSample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactNativeIDnowSample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactNativeIDnowSample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactNativeIDnowSample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3620F3D7266F735900592F67 /* ReactNativeIDnowSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeIDnowSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		3620F3D8266F735900592F67 /* ReactNativeIDnowSampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeIDnowSampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3620F3D9266F735900592F67 /* file-swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "file-swift.swift"; sourceTree = "<group>"; };
 		43C46766A8EAC2272F0AA428 /* Pods-ReactNativeIDnowSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSampleTests/Pods-ReactNativeIDnowSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		452117C22DFD17D43D789F34 /* Pods-ReactNativeIDnowSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample/Pods-ReactNativeIDnowSample.release.xcconfig"; sourceTree = "<group>"; };
-		5759710E64DB7F6A3F8D9170 /* Pods-ReactNativeIDnowSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample-tvOS/Pods-ReactNativeIDnowSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		59BB0B15B5C03808FF2D82F6 /* Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		5FBE1A2B6016516FD319D7EE /* Pods-ReactNativeIDnowSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSampleTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSampleTests/Pods-ReactNativeIDnowSampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		61BBE227669D35F40EFA52FD /* Pods_ReactNativeIDnowSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactNativeIDnowSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		631118CD7FD84F75338B1A19 /* Pods-ReactNativeIDnowSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample-tvOS/Pods-ReactNativeIDnowSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		7882E1CF237559AA00F1F542 /* RNIdnow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNIdnow.m; sourceTree = "<group>"; };
 		7882E1D1237559BC00F1F542 /* RNIdnow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNIdnow.h; sourceTree = "<group>"; };
-		880B9656F410A3CCE3174664 /* Pods-ReactNativeIDnowSample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample-tvOSTests/Pods-ReactNativeIDnowSample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		BFAEC07ABADBD8F159109E5C /* libPods-ReactNativeIDnowSample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeIDnowSample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC093F3AAC2291185A51EAF /* libPods-ReactNativeIDnowSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeIDnowSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D63631AF06D4E55F881A67 /* libPods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F16B328048E4BE0BE54ABFF1 /* Pods-ReactNativeIDnowSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample/Pods-ReactNativeIDnowSample.debug.xcconfig"; sourceTree = "<group>"; };
-		F8288D95CE8CC22C57C398CF /* Pods-ReactNativeIDnowSample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeIDnowSample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeIDnowSample-tvOSTests/Pods-ReactNativeIDnowSample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B39DCE55D828956A83DA28E8 /* Pods_ReactNativeIDnowSampleTests.framework in Frameworks */,
+				6C0CB3C66756F21D37D94A90 /* libPods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44710B4711583BDA1D917B2E /* libPods-ReactNativeIDnowSample-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DB613C5AC26333242279E6 /* libPods-ReactNativeIDnowSample-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,10 +142,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				BFAEC07ABADBD8F159109E5C /* libPods-ReactNativeIDnowSample-tvOS.a */,
-				0E3A6A37014BCA9EB08E4123 /* libPods-ReactNativeIDnowSample-tvOSTests.a */,
-				61BBE227669D35F40EFA52FD /* Pods_ReactNativeIDnowSample.framework */,
-				205983F422902FC1944C31B1 /* Pods_ReactNativeIDnowSampleTests.framework */,
+				7BC093F3AAC2291185A51EAF /* libPods-ReactNativeIDnowSample.a */,
+				D6D63631AF06D4E55F881A67 /* libPods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,12 +153,10 @@
 			children = (
 				F16B328048E4BE0BE54ABFF1 /* Pods-ReactNativeIDnowSample.debug.xcconfig */,
 				452117C22DFD17D43D789F34 /* Pods-ReactNativeIDnowSample.release.xcconfig */,
-				5759710E64DB7F6A3F8D9170 /* Pods-ReactNativeIDnowSample-tvOS.debug.xcconfig */,
-				631118CD7FD84F75338B1A19 /* Pods-ReactNativeIDnowSample-tvOS.release.xcconfig */,
-				F8288D95CE8CC22C57C398CF /* Pods-ReactNativeIDnowSample-tvOSTests.debug.xcconfig */,
-				880B9656F410A3CCE3174664 /* Pods-ReactNativeIDnowSample-tvOSTests.release.xcconfig */,
 				43C46766A8EAC2272F0AA428 /* Pods-ReactNativeIDnowSampleTests.debug.xcconfig */,
 				5FBE1A2B6016516FD319D7EE /* Pods-ReactNativeIDnowSampleTests.release.xcconfig */,
+				21481F1F7360C2024835C56D /* Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.debug.xcconfig */,
+				59BB0B15B5C03808FF2D82F6 /* Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -179,12 +171,15 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				3620F3D9266F735900592F67 /* file-swift.swift */,
 				13B07FAE1A68108700A75B9A /* ReactNativeIDnowSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeIDnowSampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				66EB754A6C3883FD15478F13 /* Pods */,
+				3620F3D7266F735900592F67 /* ReactNativeIDnowSample-Bridging-Header.h */,
+				3620F3D8266F735900592F67 /* ReactNativeIDnowSampleTests-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -213,6 +208,8 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				978D6C38ECEFF0CA67B923D4 /* [CP] Embed Pods Frameworks */,
+				FB2B87E219CE31A308D62674 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +232,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				94667377E5400B12E5CD7FB3 /* [CP] Copy Pods Resources */,
+				EDF5D4964CF9351D435F2166 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,7 +247,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeIDnowSample-tvOS" */;
 			buildPhases = (
-				E9AE50C3F8C0124D62511417 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -269,7 +266,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeIDnowSample-tvOSTests" */;
 			buildPhases = (
-				F68A6ECCDD22AB75F315EEE1 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -295,7 +291,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1250;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1250;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -343,7 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -428,7 +427,11 @@
 				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-RESIDENCE_PERMIT-IDHOLOGRAMS@3x.jpg",
 				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/IDnowImages.bundle",
 				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/IDnowSDKLocalization.bundle",
-				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/IDnowVideoIdentPlusImages.bundle",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/icon_check.mp4",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/icon_document.mp4",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/icon_people.mp4",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/icon_selfie.mp4",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -460,11 +463,33 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-RESIDENCE_PERMIT-IDHOLOGRAMS@3x.jpg",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDnowImages.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDnowSDKLocalization.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDnowVideoIdentPlusImages.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_check.mp4",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_document.mp4",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_people.mp4",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_selfie.mp4",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeIDnowSample/Pods-ReactNativeIDnowSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		978D6C38ECEFF0CA67B923D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A428FAC4E91924DB14C5BE1F /* [CP] Check Pods Manifest.lock */ = {
@@ -482,55 +507,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeIDnowSampleTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E9AE50C3F8C0124D62511417 /* [CP] Check Pods Manifest.lock */ = {
+		EDF5D4964CF9351D435F2166 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeIDnowSample/Pods-ReactNativeIDnowSample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeIDnowSample-tvOS-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F68A6ECCDD22AB75F315EEE1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeIDnowSample-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeIDnowSample/Pods-ReactNativeIDnowSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6F7A594BEFBAE8CC652E8AB /* [CP] Check Pods Manifest.lock */ = {
@@ -553,6 +552,88 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB2B87E219CE31A308D62674 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests-resources.sh",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-DRIVERS_LICENSE-IDBACKSIDE@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-DRIVERS_LICENSE-IDBACKSIDE@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-DRIVERS_LICENSE-IDFRONTSIDE@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-DRIVERS_LICENSE-IDFRONTSIDE@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-DRIVERS_LICENSE-IDHOLOGRAMS@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-DRIVERS_LICENSE-IDHOLOGRAMS@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-FACESCREENSHOT@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-FACESCREENSHOT@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-IDCARD-IDBACKSIDE@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-IDCARD-IDBACKSIDE@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-IDCARD-IDFRONTSIDE@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-IDCARD-IDFRONTSIDE@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-IDCARD-IDHOLOGRAMS@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-IDCARD-IDHOLOGRAMS@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-PASSPORT-IDBACKSIDE@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-PASSPORT-IDBACKSIDE@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-PASSPORT-IDFRONTSIDE@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-PASSPORT-IDFRONTSIDE@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-PASSPORT-IDHOLOGRAMS@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-PASSPORT-IDHOLOGRAMS@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-RESIDENCE_PERMIT-IDBACKSIDE@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-RESIDENCE_PERMIT-IDBACKSIDE@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-RESIDENCE_PERMIT-IDFRONTSIDE@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-RESIDENCE_PERMIT-IDFRONTSIDE@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-RESIDENCE_PERMIT-IDHOLOGRAMS@2x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/idn-helper-RESIDENCE_PERMIT-IDHOLOGRAMS@3x.jpg",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/IDnowImages.bundle",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/IDnowSDKLocalization.bundle",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/icon_check.mp4",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/icon_document.mp4",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/icon_people.mp4",
+				"${PODS_ROOT}/IDnowSDK/idnow-sdk/resources/icon_selfie.mp4",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-DRIVERS_LICENSE-IDBACKSIDE@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-DRIVERS_LICENSE-IDBACKSIDE@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-DRIVERS_LICENSE-IDFRONTSIDE@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-DRIVERS_LICENSE-IDFRONTSIDE@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-DRIVERS_LICENSE-IDHOLOGRAMS@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-DRIVERS_LICENSE-IDHOLOGRAMS@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-FACESCREENSHOT@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-FACESCREENSHOT@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-IDCARD-IDBACKSIDE@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-IDCARD-IDBACKSIDE@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-IDCARD-IDFRONTSIDE@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-IDCARD-IDFRONTSIDE@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-IDCARD-IDHOLOGRAMS@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-IDCARD-IDHOLOGRAMS@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-PASSPORT-IDBACKSIDE@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-PASSPORT-IDBACKSIDE@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-PASSPORT-IDFRONTSIDE@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-PASSPORT-IDFRONTSIDE@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-PASSPORT-IDHOLOGRAMS@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-PASSPORT-IDHOLOGRAMS@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-RESIDENCE_PERMIT-IDBACKSIDE@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-RESIDENCE_PERMIT-IDBACKSIDE@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-RESIDENCE_PERMIT-IDFRONTSIDE@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-RESIDENCE_PERMIT-IDFRONTSIDE@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-RESIDENCE_PERMIT-IDHOLOGRAMS@2x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/idn-helper-RESIDENCE_PERMIT-IDHOLOGRAMS@3x.jpg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDnowImages.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDnowSDKLocalization.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_check.mp4",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_document.mp4",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_people.mp4",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_selfie.mp4",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests/Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -601,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ReactNativeIDnowSampleTests.m in Sources */,
+				3620F3DB266F735900592F67 /* file-swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				3620F3DA266F735900592F67 /* file-swift.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				7882E1D0237559AA00F1F542 /* RNIdnow.m in Sources */,
 			);
@@ -661,9 +744,11 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43C46766A8EAC2272F0AA428 /* Pods-ReactNativeIDnowSampleTests.debug.xcconfig */;
+			baseConfigurationReference = 21481F1F7360C2024835C56D /* Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -678,15 +763,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeIDnowSampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeIDnowSample.app/ReactNativeIDnowSample";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FBE1A2B6016516FD319D7EE /* Pods-ReactNativeIDnowSampleTests.release.xcconfig */;
+			baseConfigurationReference = 59BB0B15B5C03808FF2D82F6 /* Pods-ReactNativeIDnowSample-ReactNativeIDnowSampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactNativeIDnowSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -698,6 +788,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeIDnowSampleTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeIDnowSample.app/ReactNativeIDnowSample";
 			};
 			name = Release;
@@ -707,6 +799,7 @@
 			baseConfigurationReference = F16B328048E4BE0BE54ABFF1 /* Pods-ReactNativeIDnowSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = ReactNativeIDnowSample/Info.plist;
@@ -718,6 +811,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeIDnowSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeIDnowSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -727,6 +823,7 @@
 			baseConfigurationReference = 452117C22DFD17D43D789F34 /* Pods-ReactNativeIDnowSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ReactNativeIDnowSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -737,13 +834,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeIDnowSample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeIDnowSample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5759710E64DB7F6A3F8D9170 /* Pods-ReactNativeIDnowSample-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -771,7 +869,6 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 631118CD7FD84F75338B1A19 /* Pods-ReactNativeIDnowSample-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -799,7 +896,6 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8288D95CE8CC22C57C398CF /* Pods-ReactNativeIDnowSample-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -826,7 +922,6 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 880B9656F410A3CCE3174664 /* Pods-ReactNativeIDnowSample-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -882,6 +977,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -935,6 +1031,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
