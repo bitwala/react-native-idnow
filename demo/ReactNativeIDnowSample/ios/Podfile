@@ -1,8 +1,27 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-platform :ios, '10.0'
+platform :ios, '11.0'
 
-target 'ReactNativeIDnowSample' do
+target 'ReactNativeIDnowSample' do 
+  # START
+  # Without this we cannot install Flipper along with ID Now v5.0.12
+  $static_framework = ['FlipperKit', 'Flipper', 'Flipper-Folly',
+    'CocoaAsyncSocket', 'ComponentKit', 'DoubleConversion',
+    'glog', 'Flipper-PeerTalk', 'Flipper-RSocket', 'Yoga', 'YogaKit',
+    'CocoaLibEvent', 'openssl-ios-bitcode', 'boost-for-react-native']
+
+  pre_install do |installer|
+    Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+    installer.pod_targets.each do |pod|
+        if $static_framework.include?(pod.name)
+          def pod.build_type;
+            Pod::BuildType.static_library
+          end
+        end
+      end
+  end
+  # END
+
   config = use_native_modules!
 
   use_react_native!(
@@ -11,7 +30,8 @@ target 'ReactNativeIDnowSample' do
     :hermes_enabled => false
   )
   
-  pod 'IDnowSDK', '4.1.7'
+  use_frameworks! :linkage => :static
+  pod 'IDnowSDK', '5.0.12'
 
   target 'ReactNativeIDnowSampleTests' do
      inherit! :complete
@@ -22,7 +42,8 @@ target 'ReactNativeIDnowSample' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
-  use_flipper!()
+  use_flipper!({ 'Flipper' => '0.87.0' })  
+
   post_install do |installer|
     react_native_post_install(installer)
   end
