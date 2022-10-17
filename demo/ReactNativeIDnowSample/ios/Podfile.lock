@@ -84,7 +84,7 @@ PODS:
     - FlipperKit/Core
     - FlipperKit/FlipperKitNetworkPlugin
   - glog (0.3.5)
-  - IDnowSDK (5.0.12):
+  - IDnowSDK (5.1.12):
     - AFNetworking (~> 4.0)
     - FLAnimatedImage (~> 1.0)
     - libPhoneNumber-iOS (~> 0.9)
@@ -351,7 +351,7 @@ PODS:
     - React-cxxreact (= 0.64.2)
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
-  - RNIdnow (0.1.5):
+  - RNIdnow (0.1.7):
     - React
   - SocketRocket (0.5.1)
   - Yoga (1.14.0)
@@ -382,7 +382,7 @@ DEPENDENCIES:
   - FlipperKit/FlipperKitUserDefaultsPlugin (= 0.87.0)
   - FlipperKit/SKIOSNetworkPlugin (= 0.87.0)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - IDnowSDK (= 5.0.12)
+  - IDnowSDK (= 5.1.12)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -498,7 +498,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
-  FBReactNativeSpec: 6061053b2a7700a8d647c7672f13d0feff8de874
+  FBReactNativeSpec: 9e4385c9e8da219f72bd4e9406fe7c3cec6af892
   FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
   Flipper: 1bd2db48dcc31e4b167b9a33ec1df01c2ded4893
   Flipper-DoubleConversion: 38631e41ef4f9b12861c67d17cb5518d06badc41
@@ -508,7 +508,7 @@ SPEC CHECKSUMS:
   Flipper-RSocket: 127954abe8b162fcaf68d2134d34dc2bd7076154
   FlipperKit: 651f50a42eb95c01b3e89a60996dd6aded529eeb
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
-  IDnowSDK: 1e617fe60409747128e29a82d13518fee6903847
+  IDnowSDK: b810e6ba6c52ab0d10520dddf1d3304f1e441d9f
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -536,11 +536,11 @@ SPEC CHECKSUMS:
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
-  RNIdnow: 7adbca36f40dc127915f92035788d0aff5e1c884
+  RNIdnow: 4d93b506d28befd326796c655bedfd8a93a25418
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 2075f9d1d98e9a5226b0676fe0bad1e6789b4496
+PODFILE CHECKSUM: 13a6ea16859438076d344abf4257a86615d6bc9b
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
