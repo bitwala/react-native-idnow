@@ -62,7 +62,7 @@ react-native link react-native-idnow
    ```
    also in dependencies
    ```
-     implementation 'de.idnow.android.sdk:idnow-platform:5.1.12'    
+     implementation 'de.idnow.android.sdk:idnow-platform:5.1.11'    
    ```
 4. Add the following to `repositories` in `android/build.gradle`:
    ```
@@ -70,7 +70,7 @@ react-native link react-native-idnow
          url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"            
       }
       maven {
-         url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-5.1.12"
+         url "https://raw.githubusercontent.com/idnow/de.idnow.android/de.idnow.android-5.1.11"
       }
    ```
    </details>
@@ -93,7 +93,7 @@ react-native link react-native-idnow
 
 ```
 use_frameworks! :linkage => :static
-pod 'IDnowSDK', '5.1.12'
+pod 'IDnowSDK', '5.1.11'
 ```
 
 - Then, run the following command:
