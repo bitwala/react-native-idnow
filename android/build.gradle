@@ -20,9 +20,17 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     lintOptions {
         abortOnError false
+    }
+    compileOptions {
+       sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/*.kotlin_module'
     }
 }
 
@@ -38,5 +46,5 @@ repositories {
 dependencies {
     implementation 'com.facebook.react:react-native:+'
 
-    implementation 'de.idnow.sdk:idnow-android-sdk:5.0.12'
+    implementation 'de.idnow.sdk:idnow-android-sdk:5.2.0'
 }

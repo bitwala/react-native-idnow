@@ -134,6 +134,14 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled = true
+    }
+    compileOptions {
+       sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/*.kotlin_module'
     }
     splits {
         abi {
@@ -204,6 +212,9 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    implementation 'de.idnow.sdk:idnow-android-sdk:5.2.0'
+    implementation 'de.idnow.android.eid:idnow-android-eid-sdk:2.5.1'
+    implementation "androidx.multidex:multidex:2.0.1"
 }
 
 // Run this once to be able to run the application with BUCK
