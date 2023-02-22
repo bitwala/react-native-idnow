@@ -51,11 +51,11 @@
   self.settings = [IDnowSettings new];
   self.settings.transactionToken = options[@"transactionToken"];
   self.settings.companyID = options[@"companyId"];
-  self.settings.showErrorSuccessScreen = options[@"showErrorSuccessScreen"];
-  self.settings.showVideoOverviewCheck = options[@"showVideoOverviewCheck"];
-  self.settings.ignoreCompanyID = options[@"ignoreCompanyID"];
-  self.settings.forceModalPresentation = options[@"forceModalPresentation"];
-  self.settings.showIdentTokenOnCheckScreen = options[@"showIdentTokenOnCheckScreen"];
+  self.settings.showErrorSuccessScreen = [RCTConvert BOOL:options[@"showErrorSuccessScreen"]];
+  self.settings.showVideoOverviewCheck = [RCTConvert BOOL:options[@"showVideoOverviewCheck"]];
+  self.settings.ignoreCompanyID = [RCTConvert BOOL:options[@"ignoreCompanyID"]];
+  self.settings.forceModalPresentation = [RCTConvert BOOL:options[@"forceModalPresentation"]];
+  self.settings.showIdentTokenOnCheckScreen = [RCTConvert BOOL:options[@"showIdentTokenOnCheckScreen"]];
   
   self.idnowController = [[IDnowController alloc] initWithSettings: self.settings];
   
